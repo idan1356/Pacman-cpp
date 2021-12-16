@@ -91,7 +91,7 @@ void Game_Object::moveToInitPos(Map map) {
 void Game_Object::moveNovice(Map map) {
 	Position tempPos;
 	Direction tempDir, oppositeDir;
-
+	int count = 0;
 	oppositeDir = (Direction)((getDirection() + 2) % 4);
 	tempPos = getNextPosition();
 
@@ -100,10 +100,13 @@ void Game_Object::moveNovice(Map map) {
 		tempPos = getPosition();
 		tempPos.advance(tempDir);
 
-		if (map.isAtSecretTunnel(tempPos)) {
+		if (count == 10) {
 			tempDir = oppositeDir;
 			break;
 		}
+
+		count++;
+		
 	} while (!map.isPassable(tempPos) || tempDir == oppositeDir || map.isAtSecretTunnel(tempPos));
 
 	setDirection(tempDir);

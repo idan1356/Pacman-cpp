@@ -17,7 +17,7 @@ public:
 	
 	Color getBreadcrumbColor() {return breadcrumb_color;};
 	Color getMapColor() { return map_color; };
-
+	char* getMap(int i) { return map[i]; };
 	Position getRandPositionOnMap();
  
 	void setMapElement(Position pos, char ch);
@@ -34,6 +34,7 @@ public:
 
 	bool isAtSecretTunnel(Position pos);
 	bool isPassable(Position pos);
+	bool isInBounds(Position pos);
 };
 
 #endif

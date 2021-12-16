@@ -91,3 +91,6 @@ Position Map::getRandPositionOnMap() {
 }
 
 
+bool Map::isInBounds(Position pos) {
+	return ((pos.getX() <= getLength()) && (pos.getY() <= getWidth()));
+}

@@ -12,7 +12,7 @@ private:
 
 public:
 	Game_Initializer(string file_name) : map(file_name) {
-		if (map.getIsValidMap())
+		if (map.getIsValidMap()) 
 			initMap();
 	};
 
@@ -30,6 +30,7 @@ public:
 	};
 	void initMap();
 	void initCell(Position pos);
+	void printLegend(Position pos, Map& map);
 };
 
 #endif

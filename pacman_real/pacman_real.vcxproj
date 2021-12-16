@@ -116,6 +116,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp14</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -139,6 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="a_node.cpp" />
     <ClCompile Include="fruit.cpp" />
     <ClCompile Include="game.cpp" />
     <ClCompile Include="game_initializer.cpp" />
@@ -152,6 +154,7 @@
     <ClCompile Include="io_utils.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="a_node.h" />
     <ClInclude Include="fruit.h" />
     <ClInclude Include="game_initializer.h" />
     <ClInclude Include="game_menu.h" />

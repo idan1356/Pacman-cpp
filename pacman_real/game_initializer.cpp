@@ -23,6 +23,7 @@ void Game_Initializer::initCell(Position pos) {
 
 	switch (mapElement) {
 	case CORRIDOR:    /*if current cell has ' ' char, adds a breadcrumb to it and increases breadcrumb count*/
+		
 		map.setMapElement(pos, BREADCRUMB);
 		pos.draw(BREADCRUMB, map.getBreadcrumbColor());
 		map.increaseBreadcrumbCount();
@@ -40,8 +41,32 @@ void Game_Initializer::initCell(Position pos) {
 		map.setMapElement(pos, BREADCRUMB);
 		map.increaseBreadcrumbCount();
 		break;
+	case '&':
+		printLegend(pos, map);
 	default:
 		pos.draw(WALL, map.getMapColor());
 		break;
 	}
 }
+
+void Game_Initializer::printLegend(Position pos, Map& map) {
+	string temp;
+	int posX = pos.getX();
+	int posY = pos.getY();
+
+	char legend[3][20] = { "###################",
+						   "#                 #",
+						   "###################" };
+	
+	for (int i = 0; i < 3; i++) {
+		temp = map.getMap(posX + i);
+		cout << temp << endl;
+		temp.replace(posY, 20, legend[i]);
+	}
+
+	map.printMap();
+
+}
+
+
+

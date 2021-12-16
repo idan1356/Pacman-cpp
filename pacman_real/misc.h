@@ -40,7 +40,7 @@ const char WALL = '#';
 const int DEFAULT_NUM_OF_GHOSTS = 2;
 const int DEFAULT_NUM_OF_LIVES = 3;
 
-const int DEFAULT_MAP_WIDTH = 19;
+const int DEFAULT_MAP_WIDTH = 25;
 const int DEFAULT_MAP_LENGTH = 80;
 
 const int GAME_SPEED = 300;
