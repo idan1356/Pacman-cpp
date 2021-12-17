@@ -4,23 +4,23 @@
 Game_State Game::start() {
 	int count;
 	bool gameOver;
-
+	stack<Position> stacks[4];
 	count = 0;
 	gameOver = false;
 	hideCursor();
-//	countdown();
+	countdown();
 
 	while (gameOver == false) {      
-		handleIsEaten(gameOver);
+		handleIsEaten(gameOver, stacks);
 		Sleep(GAME_SPEED);
 		handlePlayerInput();     /*handles pacman movementand pause status according to player input*/
 		updateBreadcrumbs();     /*updates breadcrumb based on pacmans location*/
-		handleIsEaten(gameOver);
+		handleIsEaten(gameOver, stacks);
 
 		if (map.getBreadcrumbCount() == 0)  
 			gameOver = true;
 		if (count % 2 == 0) 
-			moveGhosts(count);
+			moveGhosts(count, stacks);
 		if (count % 3 == 1)
 			fruit.moveNovice(map);
 
@@ -32,18 +32,8 @@ Game_State Game::start() {
 	}
 
 	clear_screen();
-	endgameScreen();
-	pressAnyKeyToContinue();
 	Game_State state = { lives, score };
 	return  state;
-}
-
-/*prints end game screen, based on game state after the game loop is broken*/
-void Game::endgameScreen() {
-	if (lives == 0)
-		gameLostScreen();
-	else
-		gameWonScreen();
 }
 
 
@@ -93,24 +83,40 @@ void Game::printMessage(const char* string) {
 
 	gotoxy(40, 19);
 	cout << "                   ";  
+	map.fixMap();
+
 	setTextColor(WHITE);
 }
 
 /*iterates through the array of ghosts and moves them 1 step*/
-void Game::moveGhosts(int counter) {  
-	static stack<Position> stacks[4];
-	Position curGhostPos; 
+void Game::moveGhosts(int counter, stack<Position> stacks[4]) {
+	//stack<Position> stacks[4]; 
+	Position curGhostPos;
+	int sample;
+
+	switch (difficulty) {
+	case Difficulty::BEST:
+		sample = 5;
+		break;
+	case Difficulty::GOOD:
+		sample = 10;
+		break;
+	}
+
 	for (int i = 0; i < ghost.size(); i++) {
-		if ((rand() % 10) == 3) {
-			stacks[i] = ghost[i].findPath(pacman.getPosition(), map);
-		}
-		if (!stacks[i].empty()) {
-			ghost[i].teleportObject(stacks[i].top(), map);
-			stacks[i].pop();
+		if (difficulty != Difficulty::NOVICE) {
+			if ((rand() % sample) == 0) {
+					stacks[i] = ghost[i].findPath(pacman.getPosition(), map);
+			}
+			if (!stacks[i].empty()) {
+				ghost[i].teleportObject(stacks[i].top(), map);
+				stacks[i].pop();
+			}
+			else
+				ghost[i].moveNovice(map);
 		}
 		else
 			ghost[i].moveNovice(map);
-		//ghost[i].moveBest(map, pacman.getPosition(), counter);
 	}
 }
 
@@ -133,46 +139,9 @@ void Game::countdown() {
 	printMessage("Go!");
 }
 
-void Game::gameWonScreen() {
-	const char tropyArt[10][27] = {
-		"             ___________  ",
-		"            '._==_==_=_.' ",
-		"            .-\:      /-. ",
-		"           | (|:. #1  |) |",
-		"            '-|:.     |-' ",
-		"              \::.    /   ",
-		"               '::. .'    ",
-		"                 ) (      ",
-		"               _.' '._    ",
-		"              `--------`  ",
-	};
 
-	clear_screen();
-	setTextColor(WIN_SCREEN_COLOR);
 
-	for (int i = 0; i < 10; i++)
-		cout << tropyArt[i] << endl;
 
-	setTextColor(WHITE);
-	cout << "      Congratulations! you won" << endl;
-
-}
-
-void Game::gameLostScreen() {
-	const char ghostArt[4][50] = {
-		"     .-.   .-.     .--.                         ",
-		"    | OO| | OO|   / _.-' .-.   .-.  .-.   .''.  ",
-		"    |   | |   |   \  '-. '-'   '-'  '-'   '..'  ",
-		"    '^^^' '^^^'    '--'                         ",
-	};
-
-	clear_screen();
-
-	for (int i = 0; i < 4; i++)
-		cout << ghostArt[i] << endl;
-
-	cout << "      oh no! you lost" << endl;
-}
 
 /*handles input from player, adjusts pacmans movement according to player input
 or pauses the game if the key is ESC*/
@@ -194,9 +163,12 @@ void Game::handlePlayerInput() {
 }
 
 
-void Game::handleIsEaten(bool& game_over) {
+void Game::handleIsEaten(bool& game_over, stack<Position> stacks[4]) {
 	if (isObjEatenByGhosts(pacman)) {
 		decreaseLives();
+
+		for (int i = 0; i < ghost.size(); i++)
+			stacks[i] = {};
 
 		if (lives == 0)
 			game_over = true;
@@ -206,14 +178,14 @@ void Game::handleIsEaten(bool& game_over) {
 
 	if (isObjEatenByGhosts(fruit)) {
 		fruit.toggle(map);
-		for (int i = 0; i < ghost.size(); i++)   //hacky solution so ghosts doesnt flicker
+		for (int i = 0; i < ghost.size(); i++)   
 			ghost[i].teleportObject(ghost[i].getPosition(), map);
 	}
 
 	if (pacman.getPosition().isEqual(fruit.getPosition())) {
 		fruit.toggle(map);
 		score += (fruit.getchar() - '0');
-		pacman.teleportObject(pacman.getPosition(), map); //hacky solution so pacman doesnt flicker
+		pacman.teleportObject(pacman.getPosition(), map); 
 	}
 }
 

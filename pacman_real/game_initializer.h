@@ -9,22 +9,24 @@ private:
 	vector<Ghost>	ghost;
 	Position		legend;
 	Game_State		state;
+	Difficulty		difficulty;
+	bool			colorMode;
 	const Color		colorOrder[4] = { RED, GREEN, BROWN, LIGHTMAGENTA }; //make static
 
 public:
-	Game_Initializer(string file_name, Game_State state) : map(file_name), state(state)  {
+	Game_Initializer(string file_name, Game_State state, Difficulty difficulty, bool color) : map(file_name, color), state(state), difficulty(difficulty), colorMode(color) {
 		if (map.getIsValidMap()) 
 			initMap();
 	};
 
-	Game_Initializer(string file_name) : map(file_name) {
+	Game_Initializer(string file_name, bool color) : map(file_name, color) {
 		if (map.getIsValidMap())
 			initMap();
 	};
 
 	Game_State startGame() { 
 		if (map.getIsValidMap()) {
-			Game game(pacman[0], ghost, map, legend, state);
+			Game game(pacman[0], ghost, map, legend, state, difficulty);
 			return game.start();
 		}
 		else {

@@ -44,7 +44,7 @@ void Pacman::useSecretTunnel(Map map) {
 	mapWidth = map.getWidth();
 	mapLength = map.getLength();
 
-	if (x == 0)
+	if (x == 0) 
 		x = mapWidth - 2;
 	else if (x == mapWidth - 2)
 		x = 0;
@@ -54,6 +54,7 @@ void Pacman::useSecretTunnel(Map map) {
 		y = 0;
 
 	newPos = Position(x, y);
-	teleportObject(newPos, map);
+	if(map.getMapElement(Position(x, y)) == CORRIDOR)
+		teleportObject(newPos, map);
 }
 

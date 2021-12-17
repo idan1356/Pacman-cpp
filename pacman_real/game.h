@@ -19,6 +19,7 @@ private:
 	vector<Ghost>	ghost;
 	Fruit			fruit;
 	Position		legend;
+	Difficulty		difficulty;
 	int				lives = DEFAULT_NUM_OF_LIVES;
 	int				score = 0;
 
@@ -26,23 +27,21 @@ private:
 	void printMessage(const char* message);
 	void addPointToScore() { score++; };
 	void decreaseLives() { lives--; };
-	void handleIsEaten(bool& game_over);
+	void handleIsEaten(bool& game_over, stack<Position> stacks[4]);
 
 	void updateBreadcrumbs();
 	void handlePlayerInput();
 	void pacmanEatenEvent();
 	void printParameters();
-	void gameLostScreen();
-	void gameWonScreen();
-	void endgameScreen();
-	void moveGhosts(int counter);
+
+	void moveGhosts(int counter, stack<Position> stack[4]);
 	void countdown();
 	void pause();
 
 	static Game instance;
 public:
-	Game(Pacman pacman, vector<Ghost> ghosts, Map map, Position legend, Game_State state) : 
-		pacman(pacman), ghost(ghosts), map(map), fruit(map), legend(legend), lives(state.lives), score(state.score) {};
+	Game(Pacman pacman, vector<Ghost> ghosts, Map map, Position legend, Game_State state, Difficulty difficulty) :
+		pacman(pacman), ghost(ghosts), map(map), fruit(map), legend(legend), lives(state.lives), score(state.score), difficulty(difficulty) {};
 
 	Game_State start();
 };

@@ -1,7 +1,7 @@
 #include "map.h"
 
 /*initiates map to default map*/
-Map::Map(string file_name) {
+Map::Map(string file_name, bool colorMode) {
 	int i = 1;
 	fstream file;
 	string buffer;
@@ -33,6 +33,15 @@ Map::Map(string file_name) {
 
 		map_width = strlen(map[0]) + 1;
 		map_length = i;
+	}
+
+	if (colorMode) {
+		map_color = DEFAULT_MAP_COLOR;
+		breadcrumb_color = DEFAULT_BREADCRUMB_COLOR;
+	}
+	else {
+		map_color = WHITE;
+		breadcrumb_color = WHITE;
 	}
 }
 
@@ -94,7 +103,7 @@ Position Map::getRandPositionOnMap() {
 bool Map::isInBounds(Position pos) {
 	return ((pos.getX() <= getWidth() - 1) && (pos.getY() <= getLength() - 1));
 }
-void Map::addLegend(Position pos) {
+void Map::addLegend(Position pos, bool colorMode) {
 	char legend[3][20] = { "###################",
 					   "#                 #",
 					   "###################"
@@ -107,7 +116,10 @@ void Map::addLegend(Position pos) {
 		for (int i = 0; i < 20; i++) {
 			map[posY + j][posX + i] = legend[j][i];
 			Position pos = Position(posX + i, posY + j);
-			pos.draw(legend[j][i], BLUE);
+			if(colorMode)
+				pos.draw(legend[j][i], BLUE);
+			else
+				pos.draw(legend[j][i], WHITE);
 		}
 }
 
@@ -128,4 +140,14 @@ void Map::getDimensions() {
 	}
 
 	map_length = cur + 1;
+}
+
+void Map::fixMap() {
+	Position pos;
+
+	for (int i = 0; i < 20; i++) {
+		pos = Position(40 + i, 19);
+		pos.draw(map[19][40 + i], map_color);
+	}
+
 }

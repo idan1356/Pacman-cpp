@@ -2,7 +2,6 @@
 #define _A_NODE_H
 
 #include "position.h"
-enum state { NONE, OPEN, CLOSE };
 
 class A_Node {
 private:
@@ -10,22 +9,22 @@ private:
 	short int	gCost;
 	short int	hCost;
 	short int	fCost;
-	bool		isOpen;
-	bool		isClose;
-	state		state = NONE;
+	bool		isOpen = false;
 	A_Node*		parent = nullptr;
 
 public:
 	short int getgCost() const { return gCost; };
 	short int gethCost() const { return hCost; };
 	short int getfCost() const { return fCost; };
-
 	bool getIsOpen() const { return isOpen; };
+
 	Position getPosition() const { return pos; };
 	A_Node* getParent() const { return parent; };
 
-	void setClose() { isClose = false; };
 	void setOpen() { isOpen = true; };
+	void setClose() { isOpen = false; };
+
+
 	A_Node(A_Node& adjNode, Position nodePos, Position targetPos);
 	A_Node(Position pos) : pos(pos), gCost(0), hCost(0), fCost(0) {};
 	A_Node() : pos(Position(0,0)), gCost(0), hCost(0), fCost(200) {};
@@ -43,5 +42,6 @@ struct CustomCompare {
 			return node1 > node2;
 	}
 };
+
 
 #endif

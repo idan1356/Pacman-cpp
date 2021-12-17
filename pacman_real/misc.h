@@ -1,6 +1,12 @@
 #ifndef _MISC_H_
 #define _MISC_H_
 
+enum class Difficulty {
+	BEST,
+	GOOD,
+	NOVICE
+};
+
 enum Color {
 	BLACK,
 	BLUE,

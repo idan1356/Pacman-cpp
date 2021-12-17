@@ -15,7 +15,7 @@ void Game_Initializer::initMap() {
 			initCell(tempPos);
 		}
 
-	map.addLegend(legend);
+	map.addLegend(legend, colorMode);
 }
 
 /*innitiates current cell based on what type of char it contains*/
@@ -28,9 +28,15 @@ void Game_Initializer::initCell(Position pos) {
 	case CORRIDOR:    /*if current cell has ' ' char, adds a breadcrumb to it and increases breadcrumb count*/
 		if (map.isInBounds(pos)) {
 			map.setMapElement(pos, BREADCRUMB);
-			pos.draw(BREADCRUMB, map.getBreadcrumbColor());
+
+			if(colorMode)
+				pos.draw(BREADCRUMB, map.getBreadcrumbColor());
+			else
+				pos.draw(BREADCRUMB, WHITE);
+
 			map.increaseBreadcrumbCount();
 		}
+
 		break;
 	case NO_BREADCRUMB_CORRIDOR: 
 		if (map.isInBounds(pos)) {
@@ -41,12 +47,19 @@ void Game_Initializer::initCell(Position pos) {
 	case GHOST_CHAR:
 		if (map.isInBounds(pos)) {
 			map.setMapElement(pos, CORRIDOR);
-			ghost.push_back(Ghost(pos, colorOrder[ghost.size()]));
+			if(colorMode)
+				ghost.push_back(Ghost(pos, colorOrder[ghost.size()]));
+			else
+				ghost.push_back(Ghost(pos, WHITE));
 		}
 		break;
 	case PACMAN_CHAR:
 		if (map.isInBounds(pos)) {
-			pacman.push_back(Pacman(pos, YELLOW));
+			if(colorMode)
+				pacman.push_back(Pacman(pos, YELLOW));
+			else
+				pacman.push_back(Pacman(pos, WHITE));
+
 			map.setMapElement(pos, BREADCRUMB);
 			map.increaseBreadcrumbCount();
 		}
@@ -55,7 +68,10 @@ void Game_Initializer::initCell(Position pos) {
 		legend = pos;
 	default:
 		if (map.isInBounds(pos)) {
-			pos.draw(WALL, map.getMapColor());
+			if(colorMode)
+				pos.draw(WALL, map.getMapColor());
+			else
+				pos.draw(WALL, WHITE);
 		}
 		break;
 	}

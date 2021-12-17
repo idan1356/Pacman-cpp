@@ -13,7 +13,6 @@ public:
 	Ghost(Position pos, Color color) : Game_Object('M', pos, RIGHT, color, pos) {}
 
 	stack<Position> findPath(Position pacman, Map& map);
-	stack<Position> findPathV2(Position pacman, Map& map);
 
 	void moveBest(Map& map, Position pacman, int counter);
 };

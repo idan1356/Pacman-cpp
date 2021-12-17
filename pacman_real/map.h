@@ -13,8 +13,8 @@ private:
 	char map[DEFAULT_MAP_WIDTH][DEFAULT_MAP_LENGTH];
 	bool isValid = true;
 public:
-	Map(string file_name);
-	
+	Map(string file_name, bool colorMode);
+
 	Color getBreadcrumbColor() const {return breadcrumb_color;};
 	Color getMapColor() const { return map_color; };
 	Position getRandPositionOnMap();
@@ -25,7 +25,8 @@ public:
 	void decreaseBreadcrumbCount() { breadcrumbCount--; };
 
 	void printMap();
-	void addLegend(Position pos);
+	void fixMap();
+	void addLegend(Position pos, bool colorMode);
 
 	int getLength() const { return map_length; };
 	int getWidth() const { return map_width; };
