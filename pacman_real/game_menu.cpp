@@ -17,10 +17,10 @@ void Menu::printInstructions() {
 void Menu::startGame() {
 	vector<string> files = getScreenFiles();
 	int numOfFiles = files.size();
-
+	Game_State state;
 	for (int i = 0; i < numOfFiles; i++) {
-		Game_Initializer game(files[i]);
-		game.startGame();
+		Game_Initializer game(files[i], state);
+		state = game.startGame();
 	}
 }
 

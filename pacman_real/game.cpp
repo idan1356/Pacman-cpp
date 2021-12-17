@@ -1,14 +1,14 @@
 #include "game.h"
-
+#include "stack"
 //game loop
-void Game::start() {
+Game_State Game::start() {
 	int count;
 	bool gameOver;
 
 	count = 0;
 	gameOver = false;
 	hideCursor();
-	countdown();
+//	countdown();
 
 	while (gameOver == false) {      
 		handleIsEaten(gameOver);
@@ -19,8 +19,8 @@ void Game::start() {
 
 		if (map.getBreadcrumbCount() == 0)  
 			gameOver = true;
-		if (count % 2 == 1) 
-			moveGhosts();
+		if (count % 2 == 0) 
+			moveGhosts(count);
 		if (count % 3 == 1)
 			fruit.moveNovice(map);
 
@@ -34,6 +34,8 @@ void Game::start() {
 	clear_screen();
 	endgameScreen();
 	pressAnyKeyToContinue();
+	Game_State state = { lives, score };
+	return  state;
 }
 
 /*prints end game screen, based on game state after the game loop is broken*/
@@ -59,10 +61,13 @@ void Game::pause() {
 
 /*prints the score and lives at the buttom of the screen*/
 void Game::printParameters() {
-	gotoxy(10, 19);
-	cout << "score: " << score;
-	gotoxy(60, 19);
-	cout << "lives: " << lives;
+	int x = legend.getX();
+	int y = legend.getY();
+
+	gotoxy(x + 1 , y + 1);
+	cout << "score:" << score;
+	gotoxy(x + 11, y + 1);
+	cout << "lives:" << lives;
 }
 
 /*handles pacman eaten event, 
@@ -92,10 +97,21 @@ void Game::printMessage(const char* string) {
 }
 
 /*iterates through the array of ghosts and moves them 1 step*/
-void Game::moveGhosts() {  
+void Game::moveGhosts(int counter) {  
+	static stack<Position> stacks[4];
 	Position curGhostPos; 
-	for (int i = 0; i < ghost.size(); i++)
-		ghost[i].moveNovice(map);
+	for (int i = 0; i < ghost.size(); i++) {
+		if ((rand() % 10) == 3) {
+			stacks[i] = ghost[i].findPath(pacman.getPosition(), map);
+		}
+		if (!stacks[i].empty()) {
+			ghost[i].teleportObject(stacks[i].top(), map);
+			stacks[i].pop();
+		}
+		else
+			ghost[i].moveNovice(map);
+		//ghost[i].moveBest(map, pacman.getPosition(), counter);
+	}
 }
 
 /*determines whether pacman stepped on a breadcrumb, if so
@@ -215,4 +231,5 @@ bool Game::isObjEatenByGhosts(const Game_Object& obj) const {
 	}
 	return false;
 }
+
 

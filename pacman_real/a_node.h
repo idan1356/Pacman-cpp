@@ -2,6 +2,7 @@
 #define _A_NODE_H
 
 #include "position.h"
+enum state { NONE, OPEN, CLOSE };
 
 class A_Node {
 private:
@@ -9,7 +10,9 @@ private:
 	short int	gCost;
 	short int	hCost;
 	short int	fCost;
-	bool		isOpen = false;
+	bool		isOpen;
+	bool		isClose;
+	state		state = NONE;
 	A_Node*		parent = nullptr;
 
 public:
@@ -21,14 +24,11 @@ public:
 	Position getPosition() const { return pos; };
 	A_Node* getParent() const { return parent; };
 
-	void setClose() { isOpen = false; };
+	void setClose() { isClose = false; };
 	void setOpen() { isOpen = true; };
 	A_Node(A_Node& adjNode, Position nodePos, Position targetPos);
 	A_Node(Position pos) : pos(pos), gCost(0), hCost(0), fCost(0) {};
-	A_Node() : pos(Position(0,0)), gCost(0), hCost(0), fCost(0) {};
-
-	bool operator > (const A_Node& node) const { return fCost > node.getfCost(); };
-
+	A_Node() : pos(Position(0,0)), gCost(0), hCost(0), fCost(200) {};
 
 	void update_Node(A_Node& adjNode, Position targetPos);
 };
@@ -37,10 +37,10 @@ struct CustomCompare {
 	bool operator()(const A_Node* nodel, const A_Node* noder) {
 		short int node1 = nodel->getfCost();
 		short int node2 = noder->getfCost();
-		if (nodel == noder)
-			return nodel->gethCost() > noder->gethCost();
+		if (node1 == node2)
+			return nodel->gethCost() < noder->gethCost();
 		else
-			return nodel < noder;
+			return node1 > node2;
 	}
 };
 

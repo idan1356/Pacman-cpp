@@ -15,16 +15,17 @@ private:
 public:
 	Map(string file_name);
 	
-	Color getBreadcrumbColor() {return breadcrumb_color;};
-	Color getMapColor() { return map_color; };
-	char* getMap(int i) { return map[i]; };
+	Color getBreadcrumbColor() const {return breadcrumb_color;};
+	Color getMapColor() const { return map_color; };
 	Position getRandPositionOnMap();
- 
+	void getDimensions();
+
 	void setMapElement(Position pos, char ch);
 	void increaseBreadcrumbCount() { breadcrumbCount++; };
 	void decreaseBreadcrumbCount() { breadcrumbCount--; };
 
 	void printMap();
+	void addLegend(Position pos);
 
 	int getLength() const { return map_length; };
 	int getWidth() const { return map_width; };

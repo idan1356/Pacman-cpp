@@ -92,5 +92,40 @@ Position Map::getRandPositionOnMap() {
 
 
 bool Map::isInBounds(Position pos) {
-	return ((pos.getX() <= getLength()) && (pos.getY() <= getWidth()));
+	return ((pos.getX() <= getWidth() - 1) && (pos.getY() <= getLength() - 1));
+}
+void Map::addLegend(Position pos) {
+	char legend[3][20] = { "###################",
+					   "#                 #",
+					   "###################"
+	};
+
+	int posX = pos.getX();
+	int posY = pos.getY();
+
+	for (int j = 0; j < 3; j++)
+		for (int i = 0; i < 20; i++) {
+			map[posY + j][posX + i] = legend[j][i];
+			Position pos = Position(posX + i, posY + j);
+			pos.draw(legend[j][i], BLUE);
+		}
+}
+
+void Map::getDimensions() {
+	int length = getLength();
+	int cur = 0;
+	bool foundEnd = false;
+	for (int i = 0; i < length; i++) {
+		if (map[i][0] == CORRIDOR && foundEnd == false) {
+			cur = i - 1;
+			foundEnd = true;
+		}
+
+		if (map[i][0] == WALL) {
+			cur = i;
+			foundEnd = false;
+		}
+	}
+
+	map_length = cur + 1;
 }
