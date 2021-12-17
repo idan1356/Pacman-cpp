@@ -29,7 +29,7 @@ stack<Position> Ghost::findPath(Position pacman, Map& map) {
 		curNode = open.top();
 		open.pop();
 		curNode->setClose();
-		curNode->getPosition().draw('*', RED);
+//		curNode->getPosition().draw('*', RED);
 		if (curNode->getPosition().isEqual(pacman))
 			break;
 
@@ -53,7 +53,7 @@ stack<Position> Ghost::findPath(Position pacman, Map& map) {
 				if (!curNeighbor->getIsOpen()) {
 					open.push(curNeighbor);
 					curNeighbor->setOpen();
-					curNeighbor->getPosition().draw('*', GREEN);
+//					curNeighbor->getPosition().draw('*', GREEN);
 				}
 			}
 		}
@@ -61,7 +61,7 @@ stack<Position> Ghost::findPath(Position pacman, Map& map) {
 
 	stack<Position> stack;
 	while (curNode != nullptr) {
-		curNode->getPosition().draw('*', getColor());
+//		curNode->getPosition().draw('*', getColor());
 		stack.push(curNode->getPosition());
 		curNode = curNode->getParent();
 	}
