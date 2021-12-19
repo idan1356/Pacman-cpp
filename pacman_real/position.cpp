@@ -1,14 +1,14 @@
 #include "position.h"
 
 /*draws a char at a given position*/
-void Position::draw(char ch, Color color) {
+void Position::draw(char ch, Color color) const {
 	setTextColor(color);
 	gotoxy(pos_x, pos_y);
 	cout << ch << endl;
 	setTextColor(Color::WHITE);
 }
 
-void Position::advance(Direction dir) {
+void Position::advance(const Direction& dir) {
 	switch (dir) {
 	case Direction::UP:
 		--pos_y;
@@ -27,7 +27,7 @@ void Position::advance(Direction dir) {
 }
 
 /*returns true if two positions are equal, returns false otherwise*/
-bool Position::isEqual(const Position& pos1) {
+bool Position::isEqual(const Position& pos1) const {
 	return ((pos1.pos_x == pos_x) && (pos1.pos_y == pos_y));
 }
 

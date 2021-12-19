@@ -5,8 +5,6 @@
 #include <filesystem>
 
 
-
-
 class Menu {
 private:
 	bool			color_mode = true;
@@ -15,18 +13,18 @@ private:
 	int				screen_selected;
 
 	vector<string> getScreenFiles() const;
-	void updateScreenSelected();
-	void updateDifficulty();
-	void updateColorModeOption();
-	void printInstructions();
-	void returnToMenu();
-	void startGame();
-	void printMenu();
+	void updateScreenSelected() const;
+	void updateDifficulty() const;
+	void updateColorModeOption() const;
+	void printInstructions() const;
+	void returnToMenu() const;
+	void startGame() const;
+	void printMenu() const;
 	void options();
 
-	void gameLostScreen();
-	void gameWonScreen();
-	void endgameScreen();
+	void gameLostScreen() const;
+	void gameWonScreen() const;
+	void endgameScreen() const;
 
 public:
 	Menu() : files(getScreenFiles()), screen_selected(files.size()) {};

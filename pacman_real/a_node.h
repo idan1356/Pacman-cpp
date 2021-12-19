@@ -18,17 +18,17 @@ public:
 	short int getfCost() const { return fCost; };
 	bool getIsOpen() const { return isOpen; };
 
-	Position getPosition() const { return pos; };
+	Position& getPosition() { return pos; };
 	A_Node* getParent() const { return parent; };
 
 	void setOpen() { isOpen = true; };
 	void setClose() { isOpen = false; };
 
-	A_Node(A_Node& adjNode, Position nodePos, Position targetPos);
-	A_Node(Position pos) : pos(pos), gCost(0), hCost(0), fCost(0) {};
+	A_Node(A_Node& adjNode, const Position& nodePos, const Position& targetPos);
+	A_Node(const Position& pos) : pos(pos), gCost(0), hCost(0), fCost(0) {};
 	A_Node() : pos(Position(0,0)), gCost(0), hCost(0), fCost(200) {};
 
-	void update_Node(A_Node& adjNode, Position targetPos);
+	void update_Node(A_Node& adjNode, const Position& targetPos);
 };
 
 struct CustomCompare {

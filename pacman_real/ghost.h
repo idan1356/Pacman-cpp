@@ -10,11 +10,9 @@
 class Ghost : public Game_Object {
 
 public:
-	Ghost(Position pos, Color color) : Game_Object('M', pos, Direction::RIGHT, color, pos) {}
+	Ghost(const Position& pos, const Color& color) : Game_Object('M', pos, Direction::RIGHT, color, pos) {}
 
-	stack<Position> findPath(Position pacman, Map& map);
-
-	void moveBest(Map& map, Position pacman, int counter);
+	stack<Position> findPath(const Position& pacman, const Map& map) const;
 };
 
 

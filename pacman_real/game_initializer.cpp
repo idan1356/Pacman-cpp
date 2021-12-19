@@ -77,6 +77,18 @@ void Game_Initializer::initCell(Position pos) {
 	}
 }
 
+Game_State Game_Initializer::startGame() const {
+	if (map.getIsValidMap()) {
+		Game game(pacman[0], ghost, map, legend, state, difficulty);
+		return game.start();
+	}
+	else {
+		clear_screen();
+		cout << "map is invalid" << endl;
+		pressAnyKeyToContinue();
+	}
+
+};
 
 
 

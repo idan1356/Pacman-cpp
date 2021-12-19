@@ -50,7 +50,7 @@ void Game::pause() {
 }
 
 /*prints the score and lives at the buttom of the screen*/
-void Game::printParameters() {
+void Game::printParameters() const {
 	int x = legend.getX();
 	int y = legend.getY();
 
@@ -89,7 +89,7 @@ void Game::printMessage(const char* string) {
 }
 
 /*iterates through the array of ghosts and moves them 1 step*/
-void Game::moveGhosts(int counter, stack<Position> stacks[4]) {
+void Game::moveGhosts(int& counter, stack<Position> stacks[4]) {
 	//stack<Position> stacks[4]; 
 	Position curGhostPos;
 	int sample;

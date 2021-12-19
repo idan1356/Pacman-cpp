@@ -3,7 +3,7 @@
 
 /*this function is called after a key is pressed.adjusts pacmans movement
 according to key pressed*/
-void Pacman::adjustToInput(Map map, char ch) {
+void Pacman::adjustToInput(Map& map, char ch) {
 	Position tempPos;
 	Direction tempDir;
 
@@ -22,7 +22,7 @@ void Pacman::adjustToInput(Map map, char ch) {
 }
 
 /*moves pacman if no key was pressed. */
-void Pacman::movePacman(Map map) {
+void Pacman::movePacman(Map& map) {
 	Position tempPos;
 
 	tempPos = getNextPosition();
@@ -32,7 +32,7 @@ void Pacman::movePacman(Map map) {
 }
 
 /*teleports pacman to the other side of the tunnel if at tunnel enterance*/
-void Pacman::useSecretTunnel(Map map) {
+void Pacman::useSecretTunnel(Map& map) {
 	Position curPos, newPos;
 	int mapWidth, mapLength;
 	int x, y;

@@ -23,7 +23,7 @@ public:
 	Position  getPosition() const { return obj_pos; };
 	Position getInitPosition() const { return obj_init_pos; };
 	Color getColor() const { return obj_color; };
-	Position  getNextPosition();
+	Position  getNextPosition() const;
 
 	char getchar() const { return obj_char; };
 
@@ -32,11 +32,11 @@ public:
 	void setDirection(char key);
 	void setchar(char ch) { obj_char = ch; };
 
-	void teleportObject(Position pos, Map map);
-	void moveToInitPos(Map map);
-	void moveObject(Map map);
+	void teleportObject(const Position& pos, Map& map);
+	void moveToInitPos(Map& map);
+	void moveObject(Map& map);
 
-	virtual void moveNovice(Map map);
+	virtual void moveNovice(Map& map);
 };
 
 #endif

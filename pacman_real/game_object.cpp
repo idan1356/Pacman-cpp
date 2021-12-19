@@ -11,14 +11,14 @@ Game_Object::Game_Object() : obj_char(' '), obj_pos(0,0), obj_dir(Direction::NON
 
 /*given a game object, returns the next position its gonna be at,*/
 /*according to its own direction (1 step ahead)*/
-Position Game_Object::getNextPosition() {
+Position Game_Object::getNextPosition() const {
 	Position tempPos = obj_pos;
 	tempPos.advance(obj_dir);
 	return tempPos;
 }
 
 /*moves the object 1 step according to its direction*/
-void Game_Object::moveObject(Map map) {
+void Game_Object::moveObject(Map& map) {
 	char mapElement;
 
 	mapElement = map.getMapElement(obj_pos);
@@ -29,7 +29,7 @@ void Game_Object::moveObject(Map map) {
 }
 
 /*teleports object to a different location on map based on position given*/
-void Game_Object::teleportObject(Position pos, Map map) {
+void Game_Object::teleportObject(const Position& pos, Map& map) {
 	char mapElement;
 
 	mapElement = map.getMapElement(obj_pos);
@@ -74,7 +74,7 @@ void Game_Object::setPosition(const Position& position) {
 }
 
 /*moves object back to its initial position*/
-void Game_Object::moveToInitPos(Map map) {
+void Game_Object::moveToInitPos(Map& map) {
 	Position objInitPosition;
 
 	objInitPosition = getInitPosition();
@@ -88,7 +88,7 @@ void Game_Object::moveToInitPos(Map map) {
   for game flow reasons
 */
 
-void Game_Object::moveNovice(Map map) {
+void Game_Object::moveNovice(Map& map) {
 	Position tempPos;
 	Direction tempDir, oppositeDir;
 	int count = 0;

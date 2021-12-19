@@ -32,9 +32,9 @@ private:
 	void updateBreadcrumbs();
 	void handlePlayerInput();
 	void pacmanEatenEvent();
-	void printParameters();
+	void printParameters() const;
 
-	void moveGhosts(int counter, stack<Position> stack[4]);
+	void moveGhosts(int& counter, stack<Position> stack[4]);
 	void countdown();
 	void pause();
 

@@ -19,10 +19,10 @@ public:
 	int getX() const { return pos_x; };
 	int getY() const { return pos_y; };
 
-	void draw(char ch, Color color);
-	void advance(Direction direction);
+	void draw(char ch, Color color) const;
+	void advance(const Direction& direction);
 
-	bool isEqual(const Position& pos1);
+	bool isEqual(const Position& pos1) const;
 };
 
 #endif

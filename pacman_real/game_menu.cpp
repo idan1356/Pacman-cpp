@@ -1,6 +1,6 @@
 #include "game_menu.h"
 
-void Menu::printInstructions() {
+void Menu::printInstructions() const {
 	cout << "Goal:" << endl;
 	cout << "Guide Pacman around the maze and and eat all the little white dots while avoiding the ghosts." << endl << endl;
 
@@ -14,7 +14,7 @@ void Menu::printInstructions() {
 }
 
 /*creates an instance of game, either with color or without, depends on color_mode option*/
-void Menu::startGame() {
+void Menu::startGame() const {
 	int numOfFiles = files.size();
 	Game_State state;
 
@@ -46,7 +46,7 @@ void Menu::startGame() {
 	pressAnyKeyToContinue();
 }
 
-void Menu::printMenu() {
+void Menu::printMenu() const {
 	cout << "                                                             " << endl;
 	cout << "                                                             " << endl;
 	cout << "               ************ PACMAN MENU *************        " << endl;
@@ -64,6 +64,7 @@ void Menu::options() {
 	cout << "2. Difficulty	        " << endl;
 	cout << "3. Screen Selected      " << endl;
 	cout << "4. Return to menu	        " << endl;
+	enum OPTIONS { COLOR = '1', DIFFICULTY, SCREEN, EXIT };
 
 	updateColorModeOption();
 	updateDifficulty();
@@ -76,19 +77,19 @@ void Menu::options() {
 			tempch = _getch();
 
 			switch (tempch) {
-			case '1':               /*toggle color_mode option*/
+			case COLOR:               /*toggle color_mode option*/
 				color_mode = (color_mode + 1) % 2;  
 				updateColorModeOption();
 				break;
-			case '2':
+			case DIFFICULTY:
 				difficulty = Difficulty((int(difficulty) + 1) % 3);
 				updateDifficulty();
 				break;
-			case '3':
+			case SCREEN:
 				screen_selected = (screen_selected + 1) % (files.size() + 1);
 				updateScreenSelected();
 				break;
-			case '4':
+			case EXIT:
 				return;
 			default:
 				continue;
@@ -98,7 +99,7 @@ void Menu::options() {
 }
 
 /*displays current status of the color_mode option*/
-void Menu::updateColorModeOption() {
+void Menu::updateColorModeOption() const {
 	gotoxy(26, 1);
 	if (color_mode == true)
 		cout << "on ";
@@ -106,7 +107,7 @@ void Menu::updateColorModeOption() {
 		cout << "off";
 }
 
-void Menu::updateDifficulty() {
+void Menu::updateDifficulty() const {
 	gotoxy(26, 2);
 	if(difficulty == Difficulty::BEST)
 		cout << "BEST  ";
@@ -116,7 +117,7 @@ void Menu::updateDifficulty() {
 		cout << "NOVICE  ";
 }
 
-void Menu::updateScreenSelected() {
+void Menu::updateScreenSelected() const {
 	gotoxy(26, 3);
 	if (screen_selected == files.size())
 		cout << "full game    ";
@@ -126,6 +127,7 @@ void Menu::updateScreenSelected() {
 
 /*menu loop*/
 void Menu::start() {
+	enum Options { START = '1', OPTIONS, INSTRUCTIONS, EXIT };
 	char tempch;
 	hideCursor();
 	printMenu();
@@ -136,21 +138,21 @@ void Menu::start() {
 			tempch = _getch();
 
 			switch (tempch) {
-			case '1':      
+			case START:      
 				startGame();
 				returnToMenu();
 				break;
-			case '2':
+			case OPTIONS:
 				clear_screen();
 				options();
 				returnToMenu();
 				break;
-			case '3':
+			case INSTRUCTIONS:
 				clear_screen();
 				printInstructions();
 				returnToMenu();
 				break;
-			case '4':
+			case EXIT:
 				return;
 			default:
 				continue;
@@ -160,7 +162,7 @@ void Menu::start() {
 }
 
 /*returns back to main menu*/
-void Menu::returnToMenu() {
+void Menu::returnToMenu() const {
 	clear_screen();
 	printMenu();
 }
@@ -180,7 +182,7 @@ vector<string> Menu::getScreenFiles() const {
 	return files;
 }
 
-void Menu::gameLostScreen() {
+void Menu::gameLostScreen() const {
 	const char ghostArt[4][50] = {
 		"     .-.   .-.     .--.                         ",
 		"    | OO| | OO|   / _.-' .-.   .-.  .-.   .''.  ",
@@ -196,7 +198,7 @@ void Menu::gameLostScreen() {
 	cout << "      oh no! you lost" << endl;
 }
 
-void Menu::gameWonScreen() {
+void Menu::gameWonScreen() const {
 	const char tropyArt[10][27] = {
 		"             ___________  ",
 		"            '._==_==_=_.' ",

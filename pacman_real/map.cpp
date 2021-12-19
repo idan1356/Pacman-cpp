@@ -47,7 +47,7 @@ Map::Map(string file_name, bool colorMode) {
 
 
 /* the map element at a certain position*/
-char Map::getMapElement(Position pos) {
+char Map::getMapElement(const Position& pos) const {
 	int curX = pos.getX();
 	int curY = pos.getY();
 
@@ -55,7 +55,7 @@ char Map::getMapElement(Position pos) {
 }
 
 /*prints map on console*/
-void Map::printMap() {
+void Map::printMap() const {
 	setTextColor(Color::BLUE);
 	for (int i = 0; i < map_length; i++) 
 		cout << map[i] << endl;
@@ -64,13 +64,13 @@ void Map::printMap() {
 }
 
 /*checks if a given position on map is passable for game objects*/
-bool Map::isPassable(Position pos) {
+bool Map::isPassable(const Position& pos) const {
 	char ch = getMapElement(pos);
 	return ch == CORRIDOR || ch == BREADCRUMB || ch == NO_BREADCRUMB_CORRIDOR;
 }
 
 /*checks if a given position is located at any of the tunnel enterances*/
-bool Map::isAtSecretTunnel(Position pos) {
+bool Map::isAtSecretTunnel(const Position& pos) const {
 	if (pos.getX() == 0 || pos.getX() == map_width - 1 || pos.getY() == 0 || pos.getY() == map_length - 1) {
 		return true;
 	}
@@ -79,7 +79,7 @@ bool Map::isAtSecretTunnel(Position pos) {
 }
 
 /*writes char to map*/
-void Map::setMapElement(Position pos, char ch) {
+void Map::setMapElement(const Position& pos, char ch) {
 	int posX, posY;
 
 	posX = pos.getX();
@@ -89,7 +89,7 @@ void Map::setMapElement(Position pos, char ch) {
 }
 
 
-Position Map::getRandPositionOnMap() {
+Position Map::getRandPositionOnMap() const {
 	Position pos;
 	do {
 		pos = { (rand() % getWidth()), rand() % getLength() };
@@ -100,10 +100,10 @@ Position Map::getRandPositionOnMap() {
 }
 
 
-bool Map::isInBounds(Position pos) {
+bool Map::isInBounds(const Position& pos) const {
 	return ((pos.getX() <= getWidth() - 1) && (pos.getY() <= getLength() - 1));
 }
-void Map::addLegend(Position pos, bool colorMode) {
+void Map::addLegend(const Position& pos, bool colorMode) {
 	char legend[3][20] = { "###################",
 					   "#                 #",
 					   "###################"

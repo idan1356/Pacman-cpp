@@ -1,12 +1,12 @@
 #include "fruit.h"
 
-char Fruit::getRandNum() {
+char Fruit::getRandNum() const {
 	char tempch;
 	tempch = '5' + (rand() % 5);
 	return tempch;
 }
 
- void Fruit::toggle(Map map) {
+ void Fruit::toggle(Map& map) {
 	 isActivated = (isActivated + 1) % 2; 
 
 	 if (isActivated == false) {
@@ -24,7 +24,7 @@ char Fruit::getRandNum() {
 
  }
 
- void Fruit::moveNovice(Map map) {
+ void Fruit::moveNovice(Map& map) {
 	 if (isActivated)
 		 Game_Object::moveNovice(map);
  }

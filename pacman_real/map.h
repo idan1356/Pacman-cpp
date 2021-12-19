@@ -17,26 +17,26 @@ public:
 
 	Color getBreadcrumbColor() const {return breadcrumb_color;};
 	Color getMapColor() const { return map_color; };
-	Position getRandPositionOnMap();
+	Position getRandPositionOnMap() const;
 	void getDimensions();
 
-	void setMapElement(Position pos, char ch);
+	void setMapElement(const Position& pos, char ch);
 	void increaseBreadcrumbCount() { breadcrumbCount++; };
 	void decreaseBreadcrumbCount() { breadcrumbCount--; };
 
-	void printMap();
+	void printMap() const;
 	void fixMap();
-	void addLegend(Position pos, bool colorMode);
+	void addLegend(const Position& pos, bool colorMode);
 
 	int getLength() const { return map_length; };
 	int getWidth() const { return map_width; };
 	int getBreadcrumbCount() const { return breadcrumbCount; };
 	bool getIsValidMap() const { return isValid; };
-	char getMapElement(Position pos);
+	char getMapElement(const Position& pos) const;
 
-	bool isAtSecretTunnel(Position pos);
-	bool isPassable(Position pos);
-	bool isInBounds(Position pos);
+	bool isAtSecretTunnel(const Position& pos) const;
+	bool isPassable(const Position& pos) const;
+	bool isInBounds(const Position& pos) const;
 };
 
 #endif

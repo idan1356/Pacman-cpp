@@ -1,20 +1,7 @@
 #include "ghost.h"
 
-void Ghost::moveBest(Map& map, Position pacman, int counter) {
-	static stack<Position> stack;
 
-	//if (counter % 50 == 0) 
-		//stack = findPath(pacman, map);
-
-	if (!stack.empty()) {
-		teleportObject(stack.top(), map);
-		stack.pop();
-	}
-	else
-		moveNovice(map);
-}
-
-stack<Position> Ghost::findPath(Position pacman, Map& map) {
+stack<Position> Ghost::findPath(const Position& pacman, const Map& map) const {
 	A_Node* arr[DEFAULT_MAP_LENGTH][DEFAULT_MAP_WIDTH]{};
 	priority_queue<A_Node*, vector<A_Node*>, CustomCompare> open;
 	A_Node* curNode = nullptr;
