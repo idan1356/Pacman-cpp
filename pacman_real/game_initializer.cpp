@@ -32,7 +32,7 @@ void Game_Initializer::initCell(Position pos) {
 			if(colorMode)
 				pos.draw(BREADCRUMB, map.getBreadcrumbColor());
 			else
-				pos.draw(BREADCRUMB, WHITE);
+				pos.draw(BREADCRUMB, Color::WHITE);
 
 			map.increaseBreadcrumbCount();
 		}
@@ -41,7 +41,7 @@ void Game_Initializer::initCell(Position pos) {
 	case NO_BREADCRUMB_CORRIDOR: 
 		if (map.isInBounds(pos)) {
 			map.setMapElement(pos, CORRIDOR);
-			pos.draw(CORRIDOR, WHITE);
+			pos.draw(CORRIDOR, Color::WHITE);
 		}
 		break;
 	case GHOST_CHAR:
@@ -50,15 +50,15 @@ void Game_Initializer::initCell(Position pos) {
 			if(colorMode)
 				ghost.push_back(Ghost(pos, colorOrder[ghost.size()]));
 			else
-				ghost.push_back(Ghost(pos, WHITE));
+				ghost.push_back(Ghost(pos, Color::WHITE));
 		}
 		break;
 	case PACMAN_CHAR:
 		if (map.isInBounds(pos)) {
 			if(colorMode)
-				pacman.push_back(Pacman(pos, YELLOW));
+				pacman.push_back(Pacman(pos, Color::YELLOW));
 			else
-				pacman.push_back(Pacman(pos, WHITE));
+				pacman.push_back(Pacman(pos, Color::WHITE));
 
 			map.setMapElement(pos, BREADCRUMB);
 			map.increaseBreadcrumbCount();
@@ -71,7 +71,7 @@ void Game_Initializer::initCell(Position pos) {
 			if(colorMode)
 				pos.draw(WALL, map.getMapColor());
 			else
-				pos.draw(WALL, WHITE);
+				pos.draw(WALL, Color::WHITE);
 		}
 		break;
 	}

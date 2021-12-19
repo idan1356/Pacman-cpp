@@ -216,7 +216,7 @@ void Menu::gameWonScreen() {
 	for (int i = 0; i < 10; i++)
 		cout << tropyArt[i] << endl;
 
-	setTextColor(WHITE);
+	setTextColor(Color::WHITE);
 	cout << "      Congratulations! you won" << endl;
 
 }

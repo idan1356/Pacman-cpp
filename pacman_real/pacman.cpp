@@ -9,7 +9,7 @@ void Pacman::adjustToInput(Map map, char ch) {
 
 	tempDir = keyToDirection(ch);
 
-	if (tempDir != INVALID_KEY) {
+	if (tempDir != Direction::INVALID_KEY) {
 		tempPos = getPosition();
 		tempPos.advance(tempDir);
 

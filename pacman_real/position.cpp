@@ -5,21 +5,21 @@ void Position::draw(char ch, Color color) {
 	setTextColor(color);
 	gotoxy(pos_x, pos_y);
 	cout << ch << endl;
-	setTextColor(WHITE);
+	setTextColor(Color::WHITE);
 }
 
 void Position::advance(Direction dir) {
 	switch (dir) {
-	case UP:
+	case Direction::UP:
 		--pos_y;
 		break;
-	case DOWN: 
+	case Direction::DOWN:
 		++pos_y;
 		break;
-	case LEFT: 
+	case Direction::LEFT:
 		--pos_x;
 		break;
-	case RIGHT:
+	case Direction::RIGHT:
 		++pos_x;
 		break;
 /*	case NONE: no change to pos_x, pos_y */

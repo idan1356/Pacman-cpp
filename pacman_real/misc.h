@@ -7,7 +7,7 @@ enum class Difficulty {
 	NOVICE
 };
 
-enum Color {
+enum class Color {
 	BLACK,
 	BLUE,
 	GREEN,
@@ -26,7 +26,7 @@ enum Color {
 	WHITE
 };
 
-enum Direction { 
+enum class Direction { 
 	UP,
 	LEFT,
 	DOWN,
@@ -52,12 +52,12 @@ const int DEFAULT_MAP_LENGTH = 80;
 const int GAME_SPEED = 300;
 const int ESC = 27;
 
-const Color DEFAULT_MAP_COLOR = BLUE;
-const Color DEFAULT_BREADCRUMB_COLOR = YELLOW;
-const Color DEFAULT_PACMAN_COLOR = YELLOW;
-const Color DEFAULT_MESSAGE_COLOR = WHITE;
+const Color DEFAULT_MAP_COLOR = Color::BLUE;
+const Color DEFAULT_BREADCRUMB_COLOR = Color::YELLOW;
+const Color DEFAULT_PACMAN_COLOR = Color::YELLOW;
+const Color DEFAULT_MESSAGE_COLOR = Color::WHITE;
 
-const Color WIN_SCREEN_COLOR = YELLOW;
+const Color WIN_SCREEN_COLOR = Color::YELLOW;
 
-const Color colorOrder[4] = { RED, GREEN, BROWN, LIGHTMAGENTA };
+//const Color colorOrder[4] = { Color::RED, Color::GREEN, Color::BROWN, Color::LIGHTMAGENTA };
 #endif

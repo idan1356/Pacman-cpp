@@ -7,7 +7,7 @@ private:
 	bool isActivated = true;
 
 public:
-	Fruit(Map map) : Game_Object(getRandNum(), map.getRandPositionOnMap(), RIGHT, WHITE, map.getRandPositionOnMap()) {};
+	Fruit(Map map) : Game_Object(getRandNum(), map.getRandPositionOnMap(), Direction::RIGHT, Color::WHITE, map.getRandPositionOnMap()) {};
 	virtual void moveNovice(Map map);
 	void toggle(Map map);
 	char getRandNum();

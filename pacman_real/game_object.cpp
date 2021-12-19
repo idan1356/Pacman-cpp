@@ -6,7 +6,7 @@ Game_Object::Game_Object(char ch, Position pos, Direction dir, Color color, Posi
 	pos.draw(ch, obj_color);
 }
 
-Game_Object::Game_Object() : obj_char(' '), obj_pos(0,0), obj_dir(NONE), obj_color(WHITE), obj_init_pos(0, 0) {
+Game_Object::Game_Object() : obj_char(' '), obj_pos(0,0), obj_dir(Direction::NONE), obj_color(Color::WHITE), obj_init_pos(0, 0) {
 }
 
 /*given a game object, returns the next position its gonna be at,*/
@@ -44,23 +44,23 @@ void Game_Object::setDirection(char key) {
 	switch (key) {
 	case 'W':
 	case 'w':
-		obj_dir = UP;
+		obj_dir = Direction::UP;
 		break;
 	case 'X':
 	case 'x':
-		obj_dir = DOWN;
+		obj_dir = Direction::DOWN;
 		break;
 	case 'A':
 	case 'a':
-		obj_dir = LEFT;
+		obj_dir = Direction::LEFT;
 		break;
 	case 'D':
 	case 'd':
-		obj_dir = RIGHT;
+		obj_dir = Direction::RIGHT;
 		break;
 	case 'S':
 	case 's':
-		obj_dir = NONE;
+		obj_dir = Direction::NONE;
 	}
 }
 
@@ -92,7 +92,7 @@ void Game_Object::moveNovice(Map map) {
 	Position tempPos;
 	Direction tempDir, oppositeDir;
 	int count = 0;
-	oppositeDir = (Direction)((getDirection() + 2) % 4);
+	oppositeDir = (Direction)((int(getDirection()) + 2) % 4);
 	tempPos = getNextPosition();
 
 	do {

@@ -11,7 +11,7 @@ private:
 	Game_State		state;
 	Difficulty		difficulty;
 	bool			colorMode;
-	const Color		colorOrder[4] = { RED, GREEN, BROWN, LIGHTMAGENTA }; //make static
+	const Color		colorOrder[4] = { Color::RED, Color::GREEN, Color::BROWN, Color::LIGHTMAGENTA }; //make static
 
 public:
 	Game_Initializer(string file_name, Game_State state, Difficulty difficulty, bool color) : map(file_name, color), state(state), difficulty(difficulty), colorMode(color) {

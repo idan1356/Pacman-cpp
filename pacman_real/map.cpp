@@ -40,8 +40,8 @@ Map::Map(string file_name, bool colorMode) {
 		breadcrumb_color = DEFAULT_BREADCRUMB_COLOR;
 	}
 	else {
-		map_color = WHITE;
-		breadcrumb_color = WHITE;
+		map_color = Color::WHITE;
+		breadcrumb_color = Color::WHITE;
 	}
 }
 
@@ -56,11 +56,11 @@ char Map::getMapElement(Position pos) {
 
 /*prints map on console*/
 void Map::printMap() {
-	setTextColor(BLUE);
+	setTextColor(Color::BLUE);
 	for (int i = 0; i < map_length; i++) 
 		cout << map[i] << endl;
 	
-	setTextColor(WHITE);
+	setTextColor(Color::WHITE);
 }
 
 /*checks if a given position on map is passable for game objects*/
@@ -117,9 +117,9 @@ void Map::addLegend(Position pos, bool colorMode) {
 			map[posY + j][posX + i] = legend[j][i];
 			Position pos = Position(posX + i, posY + j);
 			if(colorMode)
-				pos.draw(legend[j][i], BLUE);
+				pos.draw(legend[j][i], Color::BLUE);
 			else
-				pos.draw(legend[j][i], WHITE);
+				pos.draw(legend[j][i], Color::WHITE);
 		}
 }
 

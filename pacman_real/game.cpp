@@ -66,7 +66,7 @@ void Game::pacmanEatenEvent() {
 	printParameters();
 
 	pacman.moveToInitPos(map);
-	pacman.setDirection(NONE);
+	pacman.setDirection(Direction::NONE);
 
 	for (int i = 0; i < ghost.size(); i++)
 		ghost[i].moveToInitPos(map);
@@ -85,7 +85,7 @@ void Game::printMessage(const char* string) {
 	cout << "                   ";  
 	map.fixMap();
 
-	setTextColor(WHITE);
+	setTextColor(Color::WHITE);
 }
 
 /*iterates through the array of ghosts and moves them 1 step*/

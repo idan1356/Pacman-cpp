@@ -15,7 +15,7 @@ struct Game_State {
 class Game {
 private:
 	Map				map;
-	Pacman	        pacman = { {1,1}, YELLOW };
+	Pacman	        pacman = { {1,1}, Color::YELLOW };
 	vector<Ghost>	ghost;
 	Fruit			fruit;
 	Position		legend;

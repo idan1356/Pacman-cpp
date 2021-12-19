@@ -10,7 +10,7 @@
 class Ghost : public Game_Object {
 
 public:
-	Ghost(Position pos, Color color) : Game_Object('M', pos, RIGHT, color, pos) {}
+	Ghost(Position pos, Color color) : Game_Object('M', pos, Direction::RIGHT, color, pos) {}
 
 	stack<Position> findPath(Position pacman, Map& map);
 

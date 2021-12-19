@@ -7,21 +7,21 @@ Direction keyToDirection(char key) {
 	switch (key) {
 	case 'W':
 	case 'w':
-		return UP;
+		return Direction::UP;
 	case 'X':
 	case 'x':
-		return DOWN;
+		return Direction::DOWN;
 	case 'A':
 	case 'a':
-		return LEFT;
+		return Direction::LEFT;
 	case 'D':
 	case 'd':
-		return RIGHT;
+		return Direction::RIGHT;
 	case 'S':
 	case 's':
-		return NONE;
+		return Direction::NONE;
 	default:
-		return INVALID_KEY;
+		return Direction::INVALID_KEY;
 	}
 }
 
