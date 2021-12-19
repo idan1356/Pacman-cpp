@@ -18,9 +18,6 @@ using namespace std;
 #include <experimental/filesystem>
 namespace fs = std::experimental::filesystem;
 
-
-
-
 void gotoxy(int x, int y);
 void setTextColor(Color color);
 void hideCursor();

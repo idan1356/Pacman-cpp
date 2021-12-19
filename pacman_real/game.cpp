@@ -89,8 +89,9 @@ void Game::printMessage(const char* string) {
 }
 
 /*iterates through the array of ghosts and moves them 1 step*/
+//each ghost has a change to sample pacmans current position and create a short path to its position
+//the sample rate of pacmans position changes according to the difficulty
 void Game::moveGhosts(int& counter, stack<Position> stacks[4]) {
-	//stack<Position> stacks[4]; 
 	Position curGhostPos;
 	int sample;
 
@@ -189,7 +190,7 @@ void Game::handleIsEaten(bool& game_over, stack<Position> stacks[4]) {
 	}
 }
 
-bool Game::isObjEatenByGhosts(const Game_Object& obj) const {
+bool Game::isObjEatenByGhosts(const Game_Object& obj) {
 	Position objPos;
 	Position tempGhostPos;
 

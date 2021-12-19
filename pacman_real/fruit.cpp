@@ -6,6 +6,7 @@ char Fruit::getRandNum() const {
 	return tempch;
 }
 
+//toggles fruit between being active and being inactive
  void Fruit::toggle(Map& map) {
 	 isActivated = (isActivated + 1) % 2; 
 
@@ -24,6 +25,7 @@ char Fruit::getRandNum() const {
 
  }
 
+ //moves only when active
  void Fruit::moveNovice(Map& map) {
 	 if (isActivated)
 		 Game_Object::moveNovice(map);

@@ -23,7 +23,7 @@ private:
 	int				lives = DEFAULT_NUM_OF_LIVES;
 	int				score = 0;
 
-	bool isObjEatenByGhosts(const Game_Object& obj) const;
+	bool isObjEatenByGhosts(const Game_Object& obj);
 	void printMessage(const char* message);
 	void addPointToScore() { score++; };
 	void decreaseLives() { lives--; };
@@ -40,7 +40,7 @@ private:
 
 	static Game instance;
 public:
-	Game(Pacman pacman, vector<Ghost> ghosts, Map map, Position legend, Game_State state, Difficulty difficulty) :
+	Game(const Pacman& pacman, const vector<Ghost>& ghosts, const Map& map, const Position& legend, const Game_State& state, const Difficulty& difficulty) :
 		pacman(pacman), ghost(ghosts), map(map), fruit(map), legend(legend), lives(state.lives), score(state.score), difficulty(difficulty) {};
 
 	Game_State start();

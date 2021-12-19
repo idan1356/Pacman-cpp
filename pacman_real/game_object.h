@@ -19,13 +19,13 @@ public:
 	Game_Object(char ch, Position pos, Direction dir, Color color, Position init_pos);
 	Game_Object();
 
-	Direction getDirection() const { return obj_dir; };
-	Position  getPosition() const { return obj_pos; };
-	Position getInitPosition() const { return obj_init_pos; };
-	Color getColor() const { return obj_color; };
-	Position  getNextPosition() const;
+	Direction& getDirection() { return obj_dir; };
+	Position getPosition() const { return obj_pos; };
+	const Position& getInitPosition() const { return obj_init_pos; };
+	Color& getColor() const { obj_color; };
+	Position getNextPosition() const;
 
-	char getchar() const { return obj_char; };
+	char& getchar() { return obj_char; };
 
 	void setPosition(const Position& pos);
 	void setDirection(const Direction& direction); 
