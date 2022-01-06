@@ -88,11 +88,16 @@ void Game_Object::moveToInitPos(Map& map) {
   for game flow reasons
 */
 
-void Game_Object::moveNovice(Map& map) {
+void Game_Object::moveNovice(Map& map, Logger& log, int ind) {
 	Position tempPos;
 	Direction tempDir, oppositeDir;
 	int count = 0;
-	oppositeDir = (Direction)((int(getDirection()) + 2) % 4);
+
+	if (obj_dir == Direction::NONE)
+		oppositeDir = obj_dir;
+	else
+		oppositeDir = (Direction)((int(getDirection()) + 2) % 4);
+
 	tempPos = getNextPosition();
 
 	do {
@@ -104,11 +109,19 @@ void Game_Object::moveNovice(Map& map) {
 			tempDir = oppositeDir;
 			break;
 		}
-
+		
 		count++;
 		
 	} while (!map.isPassable(tempPos) || tempDir == oppositeDir || map.isAtSecretTunnel(tempPos));
 
+	if (tempDir != obj_dir) {
+		string dir = dirToStr(tempDir);
+
+		if (ind == -1)
+			log.logToStep("fruit moved " + dir);
+		else
+			log.logToStep("ghost " + to_string(ind) + " moved " + dir);
+	}
 	setDirection(tempDir);
 	moveObject(map);
 }

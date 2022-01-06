@@ -2,6 +2,7 @@
 
 using namespace std;
 
+
 /*converts key to direction*/
 Direction keyToDirection(char key) {
 	switch (key) {
@@ -68,5 +69,49 @@ void hideCursor(){
 void clear_screen(){
 	system("cls");
 }
+
+string dirToStr(const Direction& dir) {
+	switch (dir) {
+	case Direction::UP:
+		return "up";
+		break;
+	case Direction::DOWN:
+		return "down";
+		break;
+	case Direction::RIGHT:
+		return "right";
+		break;
+	case Direction::LEFT:
+		return "left";
+		break;
+	case Direction::NONE:
+		return "inplace";
+		break;
+	default:
+		throw invalid_argument("Invalid direction given");
+	}
+}
+
+vector<string> getFiles(string extension) {
+	vector<string> files;
+	fs::path path = fs::current_path();
+
+	for (auto& p : fs::recursive_directory_iterator(path)) {
+		if (p.path().extension() == extension)
+			files.push_back(p.path().stem().string() + extension);
+	}
+
+	std::sort(files.begin(), files.end());
+
+	return files;
+}
+
+string remove_extension(const string& filename) {
+	int lastdot = filename.find_last_of(".");
+	if (lastdot == string::npos) return filename;
+	return filename.substr(0, lastdot);
+}
+
+
 
 #endif

@@ -1,6 +1,7 @@
 #ifndef _PACMAN_H_
 #define _PACMAN_H_
 #include "game_object.h"
+#include "logger.h"
 
 class Pacman: public Game_Object {
 
@@ -11,9 +12,9 @@ public:
 	Pacman(const Position& pos, const Color& color) : Game_Object(PACMAN_CHAR, pos, Direction::NONE, color, pos) {}
 	Pacman() {};
 
-	void adjustToInput(Map& map, char ch);
+	void adjustToInput(Map& map, Logger& log, char ch);
 	void useSecretTunnel(Map& map);
-	void movePacman(Map& map);
+	void movePacman(Map& map, Logger& log);
 };
 
 #endif

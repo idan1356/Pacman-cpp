@@ -3,7 +3,7 @@
 
 /*this function is called after a key is pressed.adjusts pacmans movement
 according to key pressed*/
-void Pacman::adjustToInput(Map& map, char ch) {
+void Pacman::adjustToInput(Map& map, Logger& log,  char ch) {
 	Position tempPos;
 	Direction tempDir;
 
@@ -14,21 +14,29 @@ void Pacman::adjustToInput(Map& map, char ch) {
 		tempPos.advance(tempDir);
 
 		if (map.isPassable(tempPos)) {
+			if(getDirection() != tempDir)
+				log.logToStep("pacman moved " + dirToStr(tempDir));
+
 			setDirection(ch); /*movement change will only occur if the next step is a passable corridor*/
 		}	
-		movePacman(map);
-
+		movePacman(map, log);
 	}
 }
 
 /*moves pacman if no key was pressed. */
-void Pacman::movePacman(Map& map) {
+void Pacman::movePacman(Map& map, Logger& log) {
 	Position tempPos;
 
 	tempPos = getNextPosition();
 
 	if (map.isPassable(tempPos))      /*movement will only occur if the next step is a passable corridor*/
 		moveObject(map);
+	else {
+		setDirection(Direction::NONE);
+		log.logToStep("pacman moved inplace");
+	}
+
+
 }
 
 /*teleports pacman to the other side of the tunnel if at tunnel enterance*/

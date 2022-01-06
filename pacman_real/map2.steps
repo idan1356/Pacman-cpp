@@ -1,0 +1,4097 @@
+-----------------------
+0
+pacman moved right
+ghost 0 moved up
+ghost 1 moved up
+ghost 2 moved down
+-----------------------
+1
+pacman moved inplace
+-----------------------
+2
+pacman moved up
+ghost 0 moved down
+ghost 1 moved down
+ghost 2 moved left
+-----------------------
+3
+pacman moved left
+-----------------------
+4
+pacman moved up
+ghost 0 moved down
+ghost 1 moved left
+ghost 2 moved down
+-----------------------
+5
+-----------------------
+6
+pacman moved down
+ghost 0 moved right
+ghost 1 moved left
+ghost 2 moved right
+-----------------------
+7
+-----------------------
+8
+ghost 0 moved right
+ghost 1 moved left
+ghost 2 moved down
+-----------------------
+9
+-----------------------
+10
+ghost 1 moved left
+ghost 2 moved up
+-----------------------
+11
+-----------------------
+12
+pacman moved right
+ghost 0 moved left
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+13
+pacman moved up
+-----------------------
+14
+ghost 0 moved left
+ghost 1 moved left
+-----------------------
+15
+fruit moved up
+-----------------------
+16
+ghost 0 moved left
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+17
+-----------------------
+18
+pacman moved down
+ghost 0 moved down
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+19
+-----------------------
+20
+ghost 0 moved down
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+21
+pacman moved right
+-----------------------
+22
+pacman moved down
+ghost 0 moved left
+ghost 2 moved down
+-----------------------
+23
+-----------------------
+24
+pacman moved right
+ghost 0 moved left
+ghost 1 moved right
+ghost 2 moved left
+fruit moved right
+-----------------------
+25
+pacman moved up
+-----------------------
+26
+ghost 0 moved left
+ghost 2 moved left
+-----------------------
+27
+pacman moved right
+fruit disappeared
+-----------------------
+28
+pacman moved down
+ghost 0 moved down
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+29
+-----------------------
+30
+pacman moved right
+ghost 0 moved down
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+31
+pacman moved up
+-----------------------
+32
+ghost 0 moved left
+ghost 1 moved down
+ghost 2 moved left
+-----------------------
+33
+pacman moved right
+-----------------------
+34
+ghost 0 moved left
+ghost 1 moved down
+ghost 2 moved left
+-----------------------
+35
+-----------------------
+36
+ghost 0 moved left
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+37
+-----------------------
+38
+pacman moved left
+ghost 0 moved left
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+39
+-----------------------
+40
+ghost 0 moved left
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+41
+pacman moved down
+-----------------------
+42
+ghost 0 moved left
+ghost 1 moved down
+ghost 2 moved left
+-----------------------
+43
+fruit appeared at 24 14
+pacman moved left
+fruit disappeared
+-----------------------
+44
+pacman moved up
+ghost 0 moved left
+ghost 1 moved down
+ghost 2 moved down
+-----------------------
+45
+-----------------------
+46
+pacman moved left
+ghost 0 moved left
+ghost 1 moved left
+ghost 2 moved down
+-----------------------
+47
+-----------------------
+48
+ghost 0 moved left
+ghost 1 moved left
+ghost 2 moved down
+-----------------------
+49
+-----------------------
+50
+ghost 0 moved left
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+51
+pacman moved up
+-----------------------
+52
+ghost 0 moved down
+ghost 1 moved left
+ghost 2 moved right
+-----------------------
+53
+-----------------------
+54
+ghost 0 moved down
+ghost 1 moved down
+ghost 2 moved up
+-----------------------
+55
+pacman moved right
+-----------------------
+56
+pacman moved down
+ghost 0 moved down
+ghost 1 moved right
+ghost 2 moved left
+-----------------------
+57
+-----------------------
+58
+pacman moved right
+ghost 0 moved right
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+59
+pacman moved up
+-----------------------
+60
+ghost 0 moved right
+ghost 1 moved up
+ghost 2 moved up
+-----------------------
+61
+pacman moved right
+-----------------------
+62
+ghost 0 moved right
+ghost 1 moved left
+ghost 2 moved up
+-----------------------
+63
+pacman moved down
+-----------------------
+64
+ghost 0 moved right
+ghost 2 moved left
+-----------------------
+65
+pacman moved inplace
+-----------------------
+66
+pacman moved left
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved up
+-----------------------
+67
+pacman moved up
+-----------------------
+68
+pacman moved right
+ghost 0 moved right
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+69
+-----------------------
+70
+ghost 0 moved right
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+71
+pacman moved up
+-----------------------
+72
+pacman moved left
+ghost 0 moved right
+ghost 1 moved left
+ghost 2 moved up
+-----------------------
+73
+pacman moved down
+-----------------------
+74
+ghost 0 moved right
+ghost 1 moved left
+ghost 2 moved up
+-----------------------
+75
+pacman moved right
+-----------------------
+76
+ghost 0 moved right
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+77
+-----------------------
+78
+ghost 1 moved left
+ghost 2 moved right
+-----------------------
+79
+pacman moved up
+-----------------------
+80
+ghost 0 moved left
+ghost 1 moved left
+ghost 2 moved up
+-----------------------
+81
+-----------------------
+82
+ghost 0 moved left
+ghost 1 moved left
+ghost 2 moved down
+-----------------------
+83
+-----------------------
+84
+ghost 0 moved left
+ghost 1 moved up
+ghost 2 moved up
+-----------------------
+85
+-----------------------
+86
+pacman moved left
+ghost 0 moved left
+ghost 1 moved up
+ghost 2 moved up
+-----------------------
+87
+-----------------------
+88
+ghost 0 moved left
+ghost 1 moved up
+ghost 2 moved left
+-----------------------
+89
+-----------------------
+90
+ghost 0 moved left
+ghost 1 moved up
+ghost 2 moved left
+-----------------------
+91
+-----------------------
+92
+ghost 0 moved left
+ghost 1 moved up
+ghost 2 moved down
+-----------------------
+93
+-----------------------
+94
+ghost 1 moved up
+ghost 2 moved up
+-----------------------
+95
+-----------------------
+96
+pacman moved down
+ghost 0 moved right
+ghost 1 moved left
+ghost 2 moved up
+-----------------------
+97
+pacman moved right
+-----------------------
+98
+ghost 0 moved left
+ghost 1 moved left
+ghost 2 moved up
+-----------------------
+99
+-----------------------
+100
+ghost 0 moved left
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+101
+-----------------------
+102
+ghost 0 moved left
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+103
+-----------------------
+104
+pacman moved down
+ghost 0 moved left
+ghost 1 moved left
+-----------------------
+105
+pacman moved left
+-----------------------
+106
+ghost 0 moved up
+ghost 1 moved up
+ghost 2 moved right
+-----------------------
+107
+-----------------------
+108
+ghost 0 moved left
+ghost 1 moved down
+ghost 2 moved up
+-----------------------
+109
+-----------------------
+110
+ghost 0 moved left
+ghost 1 moved left
+ghost 2 moved up
+-----------------------
+111
+-----------------------
+112
+pacman moved right
+ghost 0 moved up
+ghost 1 moved left
+ghost 2 moved up
+-----------------------
+113
+-----------------------
+114
+ghost 0 moved up
+ghost 1 moved left
+ghost 2 moved up
+-----------------------
+115
+-----------------------
+116
+ghost 0 moved left
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+117
+-----------------------
+118
+pacman moved up
+ghost 0 moved up
+ghost 1 moved up
+ghost 2 moved up
+-----------------------
+119
+-----------------------
+120
+pacman moved right
+ghost 0 moved up
+ghost 1 moved up
+ghost 2 moved up
+-----------------------
+121
+-----------------------
+122
+ghost 0 moved up
+ghost 1 moved up
+ghost 2 moved left
+-----------------------
+123
+pacman moved left
+-----------------------
+124
+ghost 0 moved up
+ghost 1 moved up
+ghost 2 moved left
+-----------------------
+125
+-----------------------
+126
+ghost 0 moved up
+ghost 1 moved up
+ghost 2 moved left
+-----------------------
+127
+-----------------------
+128
+pacman moved down
+ghost 0 moved left
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+129
+-----------------------
+130
+pacman moved inplace
+ghost 0 moved up
+ghost 1 moved up
+ghost 2 moved left
+-----------------------
+131
+-----------------------
+132
+ghost 0 moved left
+ghost 1 moved up
+ghost 2 moved left
+-----------------------
+133
+-----------------------
+134
+pacman moved left
+ghost 0 moved up
+ghost 1 moved left
+ghost 2 moved down
+-----------------------
+135
+-----------------------
+136
+ghost 0 moved up
+ghost 1 moved left
+ghost 2 moved down
+-----------------------
+137
+-----------------------
+138
+pacman moved inplace
+ghost 0 moved up
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+139
+-----------------------
+140
+pacman moved up
+ghost 0 moved up
+ghost 1 moved left
+ghost 2 moved right
+-----------------------
+141
+-----------------------
+142
+pacman moved inplace
+ghost 0 moved up
+ghost 1 moved down
+ghost 2 moved left
+-----------------------
+143
+-----------------------
+144
+pacman moved right
+ghost 0 moved left
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+145
+-----------------------
+146
+ghost 0 moved left
+ghost 1 moved down
+ghost 2 moved left
+-----------------------
+147
+-----------------------
+148
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+149
+-----------------------
+150
+ghost 0 moved right
+ghost 1 moved up
+ghost 2 moved left
+-----------------------
+151
+-----------------------
+152
+ghost 0 moved left
+ghost 1 moved right
+ghost 2 moved left
+-----------------------
+153
+-----------------------
+154
+ghost 0 moved left
+ghost 1 moved up
+ghost 2 moved left
+-----------------------
+155
+-----------------------
+156
+ghost 0 moved left
+ghost 1 moved right
+ghost 2 moved up
+-----------------------
+157
+-----------------------
+158
+ghost 0 moved down
+ghost 1 moved down
+ghost 2 moved right
+-----------------------
+159
+-----------------------
+160
+ghost 0 moved up
+ghost 1 moved left
+-----------------------
+161
+-----------------------
+162
+pacman moved inplace
+ghost 0 moved right
+-----------------------
+163
+pacman moved down
+-----------------------
+164
+ghost 0 moved left
+ghost 1 moved down
+ghost 2 moved up
+-----------------------
+165
+-----------------------
+166
+ghost 0 moved up
+ghost 1 moved left
+ghost 2 moved right
+-----------------------
+167
+pacman moved left
+-----------------------
+168
+ghost 0 moved up
+-----------------------
+169
+-----------------------
+170
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved down
+-----------------------
+171
+-----------------------
+172
+pacman moved down
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved left
+-----------------------
+173
+-----------------------
+174
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved down
+-----------------------
+175
+pacman moved left
+-----------------------
+176
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved left
+-----------------------
+177
+pacman moved up
+-----------------------
+178
+ghost 1 moved up
+ghost 2 moved up
+-----------------------
+179
+-----------------------
+180
+ghost 0 moved down
+ghost 1 moved down
+-----------------------
+181
+-----------------------
+182
+ghost 0 moved up
+ghost 1 moved right
+ghost 2 moved left
+-----------------------
+183
+-----------------------
+184
+pacman moved right
+ghost 0 moved left
+ghost 1 moved up
+ghost 2 moved right
+-----------------------
+185
+-----------------------
+186
+pacman moved down
+ghost 0 moved left
+ghost 1 moved up
+ghost 2 moved right
+-----------------------
+187
+-----------------------
+188
+pacman moved right
+ghost 0 moved left
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+189
+-----------------------
+190
+ghost 0 moved left
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+191
+-----------------------
+192
+pacman moved down
+ghost 0 moved left
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+193
+pacman moved left
+-----------------------
+194
+ghost 0 moved left
+ghost 1 moved down
+ghost 2 moved right
+-----------------------
+195
+-----------------------
+196
+ghost 0 moved left
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+197
+pacman moved inplace
+-----------------------
+198
+pacman moved down
+ghost 0 moved down
+ghost 1 moved down
+ghost 2 moved right
+-----------------------
+199
+pacman moved right
+-----------------------
+200
+pacman moved down
+ghost 0 moved left
+ghost 1 moved down
+ghost 2 moved down
+-----------------------
+201
+-----------------------
+202
+ghost 0 moved right
+ghost 1 moved down
+ghost 2 moved right
+-----------------------
+203
+pacman moved right
+-----------------------
+204
+pacman moved up
+ghost 0 moved up
+ghost 1 moved down
+ghost 2 moved down
+-----------------------
+205
+-----------------------
+206
+pacman moved right
+ghost 0 moved right
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+207
+-----------------------
+208
+ghost 0 moved right
+ghost 1 moved up
+ghost 2 moved down
+-----------------------
+209
+pacman moved down
+-----------------------
+210
+pacman moved left
+ghost 0 moved down
+ghost 2 moved right
+-----------------------
+211
+-----------------------
+212
+pacman moved down
+ghost 2 moved up
+-----------------------
+213
+-----------------------
+214
+pacman moved left
+ghost 0 moved up
+ghost 2 moved left
+-----------------------
+215
+pacman moved down
+-----------------------
+216
+ghost 0 moved down
+ghost 1 moved down
+ghost 2 moved up
+-----------------------
+217
+pacman moved left
+-----------------------
+218
+ghost 0 moved down
+ghost 1 moved down
+ghost 2 moved right
+-----------------------
+219
+pacman moved up
+-----------------------
+220
+pacman moved left
+ghost 0 moved down
+ghost 1 moved down
+ghost 2 moved up
+-----------------------
+221
+-----------------------
+222
+pacman moved right
+ghost 0 moved down
+ghost 1 moved down
+ghost 2 moved down
+-----------------------
+223
+-----------------------
+224
+ghost 0 moved right
+ghost 1 moved down
+ghost 2 moved down
+-----------------------
+225
+pacman moved left
+-----------------------
+226
+ghost 0 moved down
+ghost 1 moved down
+ghost 2 moved down
+-----------------------
+227
+-----------------------
+228
+pacman moved down
+ghost 0 moved down
+ghost 1 moved right
+ghost 2 moved down
+-----------------------
+229
+-----------------------
+230
+ghost 0 moved right
+ghost 2 moved down
+-----------------------
+231
+-----------------------
+232
+ghost 1 moved left
+ghost 2 moved down
+-----------------------
+233
+-----------------------
+234
+pacman moved left
+ghost 0 moved left
+ghost 1 moved right
+ghost 2 moved down
+-----------------------
+235
+pacman moved up
+-----------------------
+236
+ghost 0 moved down
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+237
+-----------------------
+238
+ghost 0 moved down
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+239
+-----------------------
+240
+pacman moved down
+ghost 0 moved left
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+241
+-----------------------
+242
+ghost 0 moved left
+ghost 1 moved down
+ghost 2 moved right
+-----------------------
+243
+-----------------------
+244
+ghost 0 moved left
+ghost 1 moved down
+ghost 2 moved down
+-----------------------
+245
+-----------------------
+246
+pacman moved inplace
+ghost 0 moved left
+ghost 2 moved down
+-----------------------
+247
+pacman moved left
+-----------------------
+248
+ghost 0 moved down
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+249
+-----------------------
+250
+pacman moved up
+ghost 0 moved down
+ghost 1 moved right
+ghost 2 moved left
+-----------------------
+251
+-----------------------
+252
+pacman moved left
+ghost 0 moved down
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+253
+-----------------------
+254
+ghost 0 moved down
+ghost 1 moved down
+-----------------------
+255
+-----------------------
+256
+ghost 0 moved down
+ghost 1 moved left
+ghost 2 moved down
+-----------------------
+257
+-----------------------
+258
+ghost 1 moved down
+ghost 2 moved left
+-----------------------
+259
+pacman moved inplace
+-----------------------
+260
+pacman moved down
+ghost 1 moved down
+ghost 2 moved down
+-----------------------
+261
+pacman moved right
+-----------------------
+262
+ghost 0 moved left
+ghost 1 moved down
+ghost 2 moved right
+-----------------------
+263
+-----------------------
+264
+ghost 1 moved down
+ghost 2 moved up
+-----------------------
+265
+-----------------------
+266
+-----------------------
+267
+pacman moved left
+-----------------------
+268
+ghost 1 moved up
+ghost 2 moved left
+-----------------------
+269
+-----------------------
+270
+ghost 0 moved up
+-----------------------
+271
+-----------------------
+272
+pacman moved down
+ghost 0 moved left
+ghost 1 moved down
+ghost 2 moved right
+-----------------------
+273
+pacman moved right
+-----------------------
+274
+ghost 0 moved up
+ghost 1 moved down
+ghost 2 moved left
+-----------------------
+275
+-----------------------
+276
+ghost 0 moved down
+ghost 1 moved left
+ghost 2 moved right
+-----------------------
+277
+-----------------------
+278
+pacman moved left
+ghost 0 moved left
+ghost 1 moved right
+ghost 2 moved down
+-----------------------
+279
+-----------------------
+280
+ghost 0 moved down
+ghost 1 moved left
+ghost 2 moved down
+-----------------------
+281
+-----------------------
+282
+ghost 0 moved left
+ghost 1 moved left
+-----------------------
+283
+-----------------------
+284
+pacman moved inplace
+ghost 0 moved left
+ghost 1 moved right
+-----------------------
+285
+pacman moved up
+-----------------------
+286
+ghost 1 moved left
+ghost 2 moved up
+-----------------------
+287
+pacman moved right
+-----------------------
+288
+ghost 1 moved up
+ghost 2 moved down
+-----------------------
+289
+-----------------------
+290
+ghost 0 moved up
+ghost 1 moved down
+ghost 2 moved down
+-----------------------
+291
+-----------------------
+292
+ghost 0 moved down
+ghost 1 moved left
+ghost 2 moved down
+-----------------------
+293
+-----------------------
+294
+pacman moved inplace
+ghost 0 moved right
+ghost 1 moved left
+ghost 2 moved down
+-----------------------
+295
+pacman moved left
+-----------------------
+296
+ghost 0 moved left
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+297
+-----------------------
+298
+ghost 0 moved up
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+299
+-----------------------
+300
+pacman moved right
+ghost 0 moved up
+ghost 1 moved up
+ghost 2 moved left
+-----------------------
+301
+-----------------------
+302
+pacman moved down
+ghost 0 moved right
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+303
+-----------------------
+304
+pacman moved left
+ghost 0 moved right
+ghost 1 moved up
+ghost 2 moved left
+-----------------------
+305
+-----------------------
+306
+pacman moved up
+ghost 0 moved right
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+307
+-----------------------
+308
+pacman moved left
+ghost 0 moved right
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+309
+-----------------------
+310
+pacman moved right
+ghost 0 moved right
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+311
+pacman moved down
+-----------------------
+312
+pacman moved right
+ghost 0 moved right
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+313
+-----------------------
+314
+pacman moved down
+ghost 0 moved left
+ghost 2 moved left
+-----------------------
+315
+pacman moved right
+-----------------------
+316
+ghost 0 moved right
+ghost 2 moved up
+-----------------------
+317
+-----------------------
+318
+ghost 0 moved left
+ghost 1 moved down
+ghost 2 moved right
+-----------------------
+319
+-----------------------
+320
+ghost 0 moved left
+ghost 2 moved left
+-----------------------
+321
+-----------------------
+322
+ghost 0 moved left
+ghost 1 moved up
+ghost 2 moved down
+-----------------------
+323
+-----------------------
+324
+ghost 0 moved left
+ghost 2 moved right
+-----------------------
+325
+pacman moved up
+-----------------------
+326
+ghost 0 moved down
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+327
+-----------------------
+328
+ghost 0 moved down
+ghost 2 moved right
+-----------------------
+329
+-----------------------
+330
+pacman moved down
+ghost 0 moved left
+ghost 2 moved right
+-----------------------
+331
+pacman moved right
+-----------------------
+332
+ghost 1 moved down
+ghost 2 moved right
+-----------------------
+333
+-----------------------
+334
+pacman moved up
+ghost 1 moved left
+ghost 2 moved right
+-----------------------
+335
+pacman moved left
+-----------------------
+336
+ghost 0 moved up
+ghost 1 moved down
+ghost 2 moved right
+-----------------------
+337
+-----------------------
+338
+pacman moved down
+ghost 1 moved left
+ghost 2 moved up
+-----------------------
+339
+-----------------------
+340
+ghost 0 moved right
+ghost 1 moved up
+-----------------------
+341
+pacman moved right
+-----------------------
+342
+ghost 0 moved down
+ghost 2 moved left
+-----------------------
+343
+-----------------------
+344
+pacman moved left
+ghost 0 moved left
+ghost 1 moved down
+ghost 2 moved down
+-----------------------
+345
+-----------------------
+346
+pacman moved up
+ghost 0 moved down
+ghost 1 moved right
+ghost 2 moved up
+-----------------------
+347
+pacman moved right
+-----------------------
+348
+ghost 0 moved right
+ghost 2 moved right
+fruit appeared at 22 10
+-----------------------
+349
+-----------------------
+350
+ghost 0 moved up
+ghost 1 moved left
+ghost 2 moved down
+-----------------------
+351
+pacman moved down
+fruit moved left
+-----------------------
+352
+pacman moved left
+ghost 0 moved left
+ghost 1 moved right
+ghost 2 moved down
+-----------------------
+353
+pacman moved right
+-----------------------
+354
+pacman moved down
+ghost 0 moved up
+ghost 1 moved right
+ghost 2 moved right
+fruit moved down
+-----------------------
+355
+-----------------------
+356
+pacman moved left
+ghost 0 moved down
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+357
+-----------------------
+358
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+359
+-----------------------
+360
+pacman moved right
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+361
+-----------------------
+362
+ghost 0 moved right
+ghost 1 moved down
+ghost 2 moved up
+-----------------------
+363
+-----------------------
+364
+pacman moved up
+ghost 0 moved down
+ghost 1 moved right
+ghost 2 moved down
+-----------------------
+365
+-----------------------
+366
+ghost 0 moved up
+ghost 2 moved left
+fruit moved right
+-----------------------
+367
+-----------------------
+368
+ghost 0 moved right
+ghost 1 moved left
+ghost 2 moved right
+-----------------------
+369
+pacman moved left
+-----------------------
+370
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+371
+pacman moved down
+-----------------------
+372
+pacman moved right
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+373
+pacman moved up
+-----------------------
+374
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved up
+-----------------------
+375
+pacman moved left
+-----------------------
+376
+pacman moved up
+ghost 0 moved down
+ghost 1 moved up
+ghost 2 moved up
+-----------------------
+377
+pacman moved right
+-----------------------
+378
+ghost 0 moved right
+ghost 1 moved down
+ghost 2 moved up
+-----------------------
+379
+pacman moved down
+-----------------------
+380
+pacman moved up
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+381
+-----------------------
+382
+pacman moved left
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+383
+pacman moved up
+-----------------------
+384
+pacman moved right
+ghost 0 moved right
+ghost 1 moved up
+ghost 2 moved right
+-----------------------
+385
+-----------------------
+386
+pacman moved down
+ghost 0 moved right
+ghost 1 moved up
+ghost 2 moved right
+-----------------------
+387
+pacman moved inplace
+fruit moved down
+-----------------------
+388
+pacman moved left
+ghost 0 moved right
+ghost 1 moved up
+ghost 2 moved right
+-----------------------
+389
+pacman moved right
+-----------------------
+390
+ghost 0 moved right
+ghost 1 moved up
+ghost 2 moved up
+fruit moved left
+-----------------------
+391
+pacman moved up
+-----------------------
+392
+pacman moved inplace
+ghost 0 moved right
+ghost 2 moved right
+-----------------------
+393
+pacman moved down
+fruit moved up
+-----------------------
+394
+ghost 0 moved right
+ghost 1 moved down
+-----------------------
+395
+pacman moved right
+-----------------------
+396
+ghost 2 moved down
+fruit moved left
+-----------------------
+397
+pacman moved up
+-----------------------
+398
+ghost 0 moved left
+ghost 1 moved up
+-----------------------
+399
+pacman moved left
+fruit disappeared
+-----------------------
+400
+pacman moved down
+ghost 1 moved right
+-----------------------
+401
+pacman moved right
+-----------------------
+402
+ghost 0 moved right
+ghost 1 moved right
+-----------------------
+403
+pacman moved up
+-----------------------
+404
+pacman moved inplace
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+405
+pacman moved down
+-----------------------
+406
+ghost 1 moved right
+ghost 2 moved up
+-----------------------
+407
+pacman moved left
+-----------------------
+408
+ghost 0 moved up
+ghost 1 moved right
+ghost 2 moved left
+-----------------------
+409
+-----------------------
+410
+pacman moved right
+ghost 0 moved down
+ghost 1 moved right
+ghost 2 moved up
+-----------------------
+411
+-----------------------
+412
+ghost 0 moved left
+ghost 1 moved right
+-----------------------
+413
+-----------------------
+414
+ghost 0 moved right
+ghost 1 moved up
+ghost 2 moved right
+-----------------------
+415
+-----------------------
+416
+ghost 0 moved up
+ghost 1 moved up
+-----------------------
+417
+-----------------------
+418
+pacman moved up
+ghost 0 moved up
+ghost 1 moved up
+-----------------------
+419
+-----------------------
+420
+pacman moved right
+ghost 0 moved up
+ghost 1 moved right
+ghost 2 moved down
+-----------------------
+421
+pacman moved down
+-----------------------
+422
+ghost 0 moved up
+ghost 1 moved right
+-----------------------
+423
+pacman moved right
+-----------------------
+424
+pacman moved up
+ghost 0 moved right
+-----------------------
+425
+-----------------------
+426
+pacman moved inplace
+ghost 0 moved right
+ghost 1 moved up
+ghost 2 moved up
+-----------------------
+427
+-----------------------
+428
+pacman moved right
+ghost 0 moved up
+ghost 1 moved left
+ghost 2 moved up
+-----------------------
+429
+-----------------------
+430
+ghost 0 moved up
+ghost 2 moved up
+-----------------------
+431
+-----------------------
+432
+pacman moved down
+ghost 0 moved up
+ghost 1 moved down
+ghost 2 moved left
+-----------------------
+433
+-----------------------
+434
+pacman moved left
+ghost 0 moved right
+ghost 1 moved left
+ghost 2 moved down
+-----------------------
+435
+-----------------------
+436
+ghost 0 moved right
+ghost 1 moved up
+ghost 2 moved up
+-----------------------
+437
+pacman moved up
+-----------------------
+438
+pacman moved right
+ghost 0 moved right
+ghost 2 moved right
+fruit appeared at 43 15
+-----------------------
+439
+-----------------------
+440
+ghost 1 moved left
+ghost 2 moved right
+-----------------------
+441
+pacman moved down
+fruit moved right
+-----------------------
+442
+ghost 1 moved down
+ghost 2 moved right
+-----------------------
+443
+pacman moved left
+-----------------------
+444
+pacman moved down
+ghost 1 moved up
+ghost 2 moved right
+fruit moved up
+-----------------------
+445
+pacman moved right
+-----------------------
+446
+ghost 0 moved left
+ghost 1 moved down
+-----------------------
+447
+fruit moved right
+-----------------------
+448
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved left
+-----------------------
+449
+-----------------------
+450
+ghost 0 moved right
+ghost 1 moved down
+ghost 2 moved right
+fruit moved down
+-----------------------
+451
+-----------------------
+452
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+453
+fruit moved left
+-----------------------
+454
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+455
+-----------------------
+456
+ghost 0 moved left
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+457
+-----------------------
+458
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+459
+-----------------------
+460
+ghost 0 moved right
+ghost 2 moved right
+-----------------------
+461
+-----------------------
+462
+ghost 0 moved right
+ghost 1 moved left
+ghost 2 moved right
+fruit moved up
+-----------------------
+463
+-----------------------
+464
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved up
+-----------------------
+465
+-----------------------
+466
+ghost 0 moved right
+ghost 1 moved right
+-----------------------
+467
+-----------------------
+468
+ghost 0 moved down
+ghost 1 moved right
+ghost 2 moved down
+fruit moved left
+-----------------------
+469
+-----------------------
+470
+pacman moved inplace
+ghost 0 moved down
+ghost 1 moved right
+ghost 2 moved up
+-----------------------
+471
+pacman moved down
+-----------------------
+472
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+473
+pacman moved left
+-----------------------
+474
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+475
+-----------------------
+476
+ghost 0 moved right
+ghost 2 moved right
+-----------------------
+477
+fruit disappeared
+-----------------------
+478
+ghost 0 moved right
+ghost 1 moved left
+ghost 2 moved right
+-----------------------
+479
+-----------------------
+480
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+481
+-----------------------
+482
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+483
+-----------------------
+484
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+485
+pacman moved up
+-----------------------
+486
+pacman moved left
+ghost 0 moved right
+ghost 2 moved right
+-----------------------
+487
+-----------------------
+488
+pacman moved down
+ghost 0 moved right
+ghost 1 moved left
+ghost 2 moved right
+-----------------------
+489
+-----------------------
+490
+pacman moved inplace
+ghost 0 moved right
+ghost 1 moved down
+ghost 2 moved right
+-----------------------
+491
+pacman moved right
+-----------------------
+492
+pacman moved up
+ghost 1 moved down
+ghost 2 moved right
+-----------------------
+493
+pacman moved right
+-----------------------
+494
+ghost 0 moved down
+ghost 1 moved down
+ghost 2 moved right
+-----------------------
+495
+pacman moved up
+-----------------------
+496
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+497
+pacman moved down
+-----------------------
+498
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+499
+pacman moved right
+-----------------------
+500
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+501
+-----------------------
+502
+pacman moved down
+ghost 0 moved up
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+503
+pacman moved right
+-----------------------
+504
+ghost 0 moved down
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+505
+-----------------------
+506
+ghost 0 moved right
+ghost 1 moved up
+ghost 2 moved right
+-----------------------
+507
+-----------------------
+508
+ghost 0 moved right
+ghost 1 moved down
+ghost 2 moved right
+-----------------------
+509
+-----------------------
+510
+pacman moved up
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+511
+-----------------------
+512
+ghost 0 moved right
+ghost 1 moved left
+ghost 2 moved right
+-----------------------
+513
+pacman moved down
+-----------------------
+514
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+515
+pacman moved right
+-----------------------
+516
+pacman moved down
+ghost 0 moved left
+ghost 1 moved right
+-----------------------
+517
+-----------------------
+518
+pacman moved left
+ghost 0 moved up
+ghost 1 moved right
+-----------------------
+519
+-----------------------
+520
+ghost 0 moved right
+ghost 1 moved down
+-----------------------
+521
+pacman moved down
+-----------------------
+522
+pacman moved right
+ghost 0 moved left
+ghost 1 moved right
+ghost 2 moved up
+-----------------------
+523
+-----------------------
+524
+ghost 0 moved down
+ghost 1 moved right
+ghost 2 moved down
+-----------------------
+525
+pacman moved left
+fruit appeared at 43 3
+-----------------------
+526
+ghost 0 moved right
+ghost 1 moved up
+ghost 2 moved left
+-----------------------
+527
+-----------------------
+528
+ghost 0 moved right
+ghost 1 moved down
+ghost 2 moved down
+fruit moved right
+-----------------------
+529
+-----------------------
+530
+ghost 0 moved right
+ghost 1 moved down
+ghost 2 moved down
+-----------------------
+531
+-----------------------
+532
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved left
+-----------------------
+533
+-----------------------
+534
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved down
+fruit moved down
+-----------------------
+535
+-----------------------
+536
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved down
+-----------------------
+537
+fruit disappeared
+-----------------------
+538
+ghost 0 moved down
+ghost 1 moved right
+ghost 2 moved down
+-----------------------
+539
+-----------------------
+540
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved left
+-----------------------
+541
+-----------------------
+542
+ghost 0 moved up
+ghost 1 moved right
+ghost 2 moved up
+-----------------------
+543
+-----------------------
+544
+ghost 0 moved right
+ghost 1 moved right
+-----------------------
+545
+-----------------------
+546
+ghost 1 moved right
+ghost 2 moved left
+-----------------------
+547
+-----------------------
+548
+ghost 0 moved up
+ghost 1 moved right
+-----------------------
+549
+-----------------------
+550
+ghost 1 moved right
+ghost 2 moved up
+-----------------------
+551
+-----------------------
+552
+ghost 1 moved right
+ghost 2 moved left
+-----------------------
+553
+-----------------------
+554
+ghost 1 moved right
+ghost 2 moved down
+-----------------------
+555
+-----------------------
+556
+ghost 0 moved left
+ghost 1 moved down
+ghost 2 moved left
+-----------------------
+557
+-----------------------
+558
+ghost 0 moved down
+ghost 1 moved down
+ghost 2 moved up
+-----------------------
+559
+-----------------------
+560
+pacman moved up
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved left
+-----------------------
+561
+pacman moved left
+-----------------------
+562
+ghost 0 moved up
+-----------------------
+563
+-----------------------
+564
+pacman moved down
+ghost 1 moved up
+-----------------------
+565
+pacman moved right
+-----------------------
+566
+ghost 1 moved left
+ghost 2 moved down
+-----------------------
+567
+pacman moved left
+-----------------------
+568
+ghost 0 moved left
+ghost 1 moved up
+ghost 2 moved up
+-----------------------
+569
+pacman moved up
+-----------------------
+570
+ghost 0 moved up
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+571
+-----------------------
+572
+ghost 0 moved left
+ghost 1 moved down
+ghost 2 moved left
+-----------------------
+573
+pacman moved left
+-----------------------
+574
+pacman moved right
+ghost 0 moved down
+ghost 1 moved right
+ghost 2 moved left
+-----------------------
+575
+pacman moved up
+-----------------------
+576
+pacman moved down
+ghost 0 moved left
+ghost 2 moved left
+-----------------------
+577
+-----------------------
+578
+ghost 0 moved up
+ghost 2 moved up
+-----------------------
+579
+pacman moved up
+-----------------------
+580
+ghost 0 moved left
+ghost 1 moved up
+ghost 2 moved up
+-----------------------
+581
+-----------------------
+582
+ghost 0 moved down
+ghost 2 moved up
+-----------------------
+583
+pacman moved down
+-----------------------
+584
+pacman moved right
+ghost 0 moved left
+-----------------------
+585
+fruit appeared at 69 17
+-----------------------
+586
+ghost 0 moved down
+ghost 1 moved down
+ghost 2 moved down
+-----------------------
+587
+-----------------------
+588
+ghost 0 moved left
+ghost 1 moved up
+ghost 2 moved down
+fruit moved left
+-----------------------
+589
+-----------------------
+590
+ghost 1 moved up
+ghost 2 moved left
+-----------------------
+591
+-----------------------
+592
+ghost 1 moved left
+ghost 2 moved down
+-----------------------
+593
+-----------------------
+594
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+595
+-----------------------
+596
+ghost 1 moved left
+ghost 2 moved right
+-----------------------
+597
+pacman moved down
+fruit moved up
+-----------------------
+598
+ghost 0 moved up
+ghost 2 moved up
+-----------------------
+599
+pacman moved right
+-----------------------
+600
+ghost 0 moved left
+ghost 1 moved right
+ghost 2 moved left
+fruit moved left
+-----------------------
+601
+-----------------------
+602
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+603
+pacman moved up
+fruit moved down
+-----------------------
+604
+pacman moved left
+ghost 0 moved up
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+605
+-----------------------
+606
+ghost 0 moved right
+ghost 1 moved left
+ghost 2 moved left
+fruit moved left
+-----------------------
+607
+pacman moved down
+-----------------------
+608
+ghost 0 moved down
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+609
+pacman moved right
+-----------------------
+610
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+611
+-----------------------
+612
+pacman moved left
+ghost 0 moved left
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+613
+-----------------------
+614
+ghost 0 moved down
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+615
+fruit moved up
+-----------------------
+616
+ghost 0 moved right
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+617
+pacman moved up
+-----------------------
+618
+pacman moved left
+ghost 0 moved left
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+619
+-----------------------
+620
+ghost 0 moved down
+ghost 1 moved up
+ghost 2 moved left
+-----------------------
+621
+-----------------------
+622
+ghost 0 moved left
+ghost 1 moved down
+ghost 2 moved left
+-----------------------
+623
+-----------------------
+624
+ghost 0 moved left
+ghost 1 moved left
+-----------------------
+625
+-----------------------
+626
+ghost 0 moved left
+ghost 1 moved left
+-----------------------
+627
+-----------------------
+628
+ghost 0 moved left
+ghost 1 moved left
+-----------------------
+629
+pacman moved down
+-----------------------
+630
+pacman moved right
+ghost 0 moved left
+ghost 1 moved left
+fruit moved left
+-----------------------
+631
+-----------------------
+632
+ghost 0 moved down
+ghost 1 moved left
+-----------------------
+633
+fruit moved up
+-----------------------
+634
+ghost 0 moved left
+ghost 1 moved left
+-----------------------
+635
+-----------------------
+636
+ghost 0 moved left
+ghost 1 moved down
+-----------------------
+637
+-----------------------
+638
+ghost 0 moved left
+ghost 1 moved left
+-----------------------
+639
+-----------------------
+640
+ghost 0 moved up
+ghost 1 moved left
+ghost 2 moved right
+-----------------------
+641
+pacman moved up
+-----------------------
+642
+pacman moved inplace
+ghost 0 moved down
+ghost 1 moved left
+fruit moved right
+-----------------------
+643
+pacman moved right
+-----------------------
+644
+pacman moved up
+ghost 0 moved left
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+645
+fruit moved down
+-----------------------
+646
+ghost 0 moved left
+ghost 1 moved left
+ghost 2 moved right
+-----------------------
+647
+-----------------------
+648
+ghost 0 moved left
+ghost 1 moved left
+-----------------------
+649
+pacman moved right
+-----------------------
+650
+pacman moved up
+ghost 0 moved left
+ghost 2 moved left
+-----------------------
+651
+fruit moved left
+-----------------------
+652
+ghost 0 moved down
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+653
+-----------------------
+654
+pacman moved left
+ghost 0 moved left
+ghost 1 moved up
+ghost 2 moved right
+fruit moved up
+-----------------------
+655
+-----------------------
+656
+ghost 0 moved right
+ghost 1 moved down
+ghost 2 moved right
+-----------------------
+657
+fruit moved right
+-----------------------
+658
+ghost 0 moved up
+ghost 1 moved up
+ghost 2 moved right
+-----------------------
+659
+-----------------------
+660
+pacman moved up
+ghost 0 moved down
+ghost 1 moved up
+-----------------------
+661
+-----------------------
+662
+pacman moved inplace
+ghost 0 moved up
+ghost 1 moved up
+ghost 2 moved left
+-----------------------
+663
+-----------------------
+664
+ghost 0 moved up
+ghost 1 moved up
+ghost 2 moved right
+-----------------------
+665
+-----------------------
+666
+pacman moved left
+ghost 0 moved up
+ghost 1 moved up
+ghost 2 moved right
+-----------------------
+667
+-----------------------
+668
+ghost 0 moved up
+ghost 1 moved up
+ghost 2 moved right
+-----------------------
+669
+-----------------------
+670
+ghost 0 moved up
+ghost 1 moved up
+ghost 2 moved right
+-----------------------
+671
+pacman moved down
+-----------------------
+672
+ghost 0 moved up
+ghost 1 moved up
+fruit moved down
+-----------------------
+673
+pacman moved left
+-----------------------
+674
+ghost 0 moved up
+ghost 2 moved left
+-----------------------
+675
+-----------------------
+676
+ghost 0 moved up
+ghost 1 moved down
+ghost 2 moved up
+-----------------------
+677
+pacman moved right
+-----------------------
+678
+pacman moved up
+ghost 0 moved up
+ghost 1 moved left
+ghost 2 moved up
+-----------------------
+679
+-----------------------
+680
+ghost 0 moved left
+ghost 1 moved up
+-----------------------
+681
+-----------------------
+682
+pacman moved right
+ghost 0 moved left
+ghost 1 moved down
+ghost 2 moved down
+-----------------------
+683
+pacman moved down
+-----------------------
+684
+ghost 0 moved left
+ghost 1 moved up
+ghost 2 moved up
+fruit moved left
+-----------------------
+685
+-----------------------
+686
+pacman moved right
+ghost 0 moved left
+ghost 1 moved left
+ghost 2 moved up
+-----------------------
+687
+pacman moved up
+fruit moved up
+-----------------------
+688
+ghost 0 moved left
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+689
+pacman moved right
+-----------------------
+690
+pacman moved up
+ghost 1 moved up
+ghost 2 moved right
+fruit moved right
+-----------------------
+691
+pacman moved left
+-----------------------
+692
+pacman moved right
+ghost 0 moved up
+ghost 1 moved left
+ghost 2 moved right
+-----------------------
+693
+fruit moved down
+-----------------------
+694
+ghost 0 moved right
+ghost 1 moved left
+ghost 2 moved up
+-----------------------
+695
+-----------------------
+696
+ghost 1 moved left
+ghost 2 moved up
+fruit moved left
+-----------------------
+697
+-----------------------
+698
+ghost 0 moved up
+ghost 1 moved left
+ghost 2 moved up
+-----------------------
+699
+-----------------------
+700
+ghost 0 moved right
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+701
+-----------------------
+702
+ghost 0 moved down
+ghost 1 moved left
+ghost 2 moved up
+fruit moved up
+-----------------------
+703
+-----------------------
+704
+ghost 0 moved right
+ghost 1 moved left
+ghost 2 moved up
+-----------------------
+705
+-----------------------
+706
+ghost 0 moved up
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+707
+-----------------------
+708
+ghost 0 moved down
+ghost 1 moved up
+ghost 2 moved left
+-----------------------
+709
+-----------------------
+710
+ghost 0 moved up
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+711
+-----------------------
+712
+ghost 0 moved left
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+713
+-----------------------
+714
+ghost 0 moved down
+ghost 1 moved left
+ghost 2 moved left
+fruit moved right
+-----------------------
+715
+-----------------------
+716
+ghost 0 moved up
+ghost 1 moved up
+ghost 2 moved left
+-----------------------
+717
+fruit moved down
+-----------------------
+718
+ghost 0 moved left
+ghost 1 moved right
+-----------------------
+719
+-----------------------
+720
+ghost 0 moved right
+ghost 1 moved down
+ghost 2 moved right
+fruit disappeared
+-----------------------
+721
+-----------------------
+722
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+723
+-----------------------
+724
+ghost 0 moved right
+ghost 1 moved up
+ghost 2 moved right
+-----------------------
+725
+-----------------------
+726
+ghost 0 moved right
+ghost 1 moved left
+ghost 2 moved right
+-----------------------
+727
+-----------------------
+728
+pacman moved down
+ghost 0 moved down
+ghost 1 moved down
+ghost 2 moved right
+-----------------------
+729
+pacman moved left
+-----------------------
+730
+ghost 0 moved down
+ghost 1 moved left
+ghost 2 moved right
+-----------------------
+731
+-----------------------
+732
+pacman moved down
+ghost 0 moved down
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+733
+pacman moved right
+-----------------------
+734
+ghost 0 moved down
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+735
+-----------------------
+736
+pacman moved down
+ghost 0 moved down
+ghost 1 moved right
+ghost 2 moved down
+-----------------------
+737
+pacman moved left
+-----------------------
+738
+ghost 0 moved down
+ghost 1 moved down
+ghost 2 moved down
+-----------------------
+739
+-----------------------
+740
+ghost 0 moved down
+ghost 1 moved right
+ghost 2 moved down
+-----------------------
+741
+-----------------------
+742
+pacman moved up
+ghost 0 moved down
+ghost 2 moved down
+-----------------------
+743
+pacman moved right
+-----------------------
+744
+pacman moved left
+ghost 0 moved down
+ghost 1 moved left
+ghost 2 moved down
+-----------------------
+745
+-----------------------
+746
+ghost 0 moved down
+ghost 1 moved right
+ghost 2 moved down
+-----------------------
+747
+-----------------------
+748
+ghost 0 moved left
+ghost 1 moved right
+ghost 2 moved down
+-----------------------
+749
+-----------------------
+750
+ghost 0 moved up
+ghost 1 moved right
+ghost 2 moved down
+-----------------------
+751
+-----------------------
+752
+ghost 0 moved down
+ghost 1 moved right
+ghost 2 moved left
+-----------------------
+753
+-----------------------
+754
+ghost 0 moved up
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+755
+-----------------------
+756
+ghost 0 moved up
+ghost 1 moved right
+ghost 2 moved up
+-----------------------
+757
+pacman moved inplace
+-----------------------
+758
+pacman moved down
+ghost 0 moved up
+ghost 1 moved right
+ghost 2 moved up
+-----------------------
+759
+pacman moved right
+-----------------------
+760
+ghost 0 moved up
+ghost 1 moved right
+ghost 2 moved up
+-----------------------
+761
+-----------------------
+762
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved up
+-----------------------
+763
+-----------------------
+764
+ghost 0 moved left
+ghost 1 moved right
+ghost 2 moved up
+-----------------------
+765
+-----------------------
+766
+pacman moved down
+ghost 0 moved up
+ghost 1 moved right
+ghost 2 moved up
+-----------------------
+767
+pacman moved left
+-----------------------
+768
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+769
+-----------------------
+770
+ghost 0 moved right
+ghost 1 moved down
+ghost 2 moved right
+-----------------------
+771
+-----------------------
+772
+ghost 0 moved right
+ghost 1 moved down
+ghost 2 moved right
+-----------------------
+773
+pacman moved down
+-----------------------
+774
+pacman moved right
+ghost 0 moved right
+ghost 1 moved down
+ghost 2 moved right
+-----------------------
+775
+pacman moved down
+-----------------------
+776
+pacman moved left
+ghost 0 moved right
+ghost 2 moved right
+-----------------------
+777
+pacman moved down
+-----------------------
+778
+pacman moved inplace
+ghost 0 moved right
+ghost 1 moved up
+ghost 2 moved right
+-----------------------
+779
+pacman moved right
+-----------------------
+780
+ghost 0 moved right
+ghost 1 moved up
+ghost 2 moved right
+-----------------------
+781
+-----------------------
+782
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+783
+-----------------------
+784
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved up
+-----------------------
+785
+pacman moved down
+-----------------------
+786
+pacman moved left
+ghost 0 moved up
+ghost 1 moved right
+ghost 2 moved up
+-----------------------
+787
+-----------------------
+788
+pacman moved inplace
+ghost 0 moved up
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+789
+pacman moved down
+-----------------------
+790
+pacman moved right
+ghost 0 moved up
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+791
+pacman moved down
+-----------------------
+792
+ghost 0 moved up
+ghost 1 moved up
+ghost 2 moved right
+-----------------------
+793
+pacman moved left
+-----------------------
+794
+pacman moved up
+ghost 0 moved left
+ghost 1 moved down
+ghost 2 moved down
+-----------------------
+795
+-----------------------
+796
+pacman moved right
+ghost 0 moved up
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+797
+-----------------------
+798
+ghost 0 moved right
+ghost 1 moved down
+ghost 2 moved down
+-----------------------
+799
+-----------------------
+800
+ghost 0 moved left
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+801
+-----------------------
+802
+ghost 0 moved down
+ghost 1 moved down
+ghost 2 moved up
+-----------------------
+803
+-----------------------
+804
+pacman moved up
+ghost 0 moved down
+ghost 1 moved down
+ghost 2 moved left
+-----------------------
+805
+-----------------------
+806
+pacman moved left
+ghost 0 moved right
+ghost 1 moved left
+ghost 2 moved down
+-----------------------
+807
+pacman moved down
+-----------------------
+808
+pacman moved right
+ghost 0 moved down
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+809
+-----------------------
+810
+pacman moved up
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved left
+-----------------------
+811
+pacman moved right
+-----------------------
+812
+pacman moved down
+ghost 0 moved down
+ghost 2 moved left
+-----------------------
+813
+-----------------------
+814
+pacman moved left
+ghost 0 moved left
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+815
+pacman moved right
+-----------------------
+816
+ghost 0 moved right
+ghost 1 moved right
+-----------------------
+817
+pacman moved down
+-----------------------
+818
+pacman moved right
+ghost 0 moved up
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+819
+pacman moved up
+-----------------------
+820
+ghost 0 moved down
+ghost 1 moved down
+ghost 2 moved left
+-----------------------
+821
+pacman moved left
+-----------------------
+822
+pacman moved up
+ghost 0 moved down
+ghost 1 moved right
+ghost 2 moved down
+-----------------------
+823
+pacman moved right
+-----------------------
+824
+ghost 0 moved right
+ghost 1 moved left
+ghost 2 moved down
+-----------------------
+825
+-----------------------
+826
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved down
+-----------------------
+827
+pacman moved down
+-----------------------
+828
+pacman moved left
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+829
+-----------------------
+830
+pacman moved right
+ghost 0 moved down
+ghost 1 moved down
+ghost 2 moved right
+-----------------------
+831
+pacman moved left
+-----------------------
+832
+ghost 0 moved down
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+833
+-----------------------
+834
+pacman moved down
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved down
+-----------------------
+835
+-----------------------
+836
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved down
+-----------------------
+837
+-----------------------
+838
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+839
+pacman moved left
+-----------------------
+840
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved left
+-----------------------
+841
+pacman moved down
+-----------------------
+842
+pacman moved left
+ghost 0 moved right
+ghost 1 moved up
+ghost 2 moved down
+-----------------------
+843
+-----------------------
+844
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved down
+-----------------------
+845
+-----------------------
+846
+ghost 0 moved right
+ghost 1 moved up
+ghost 2 moved down
+-----------------------
+847
+-----------------------
+848
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved down
+-----------------------
+849
+-----------------------
+850
+pacman moved right
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+851
+-----------------------
+852
+ghost 0 moved right
+ghost 1 moved right
+-----------------------
+853
+pacman moved left
+-----------------------
+854
+ghost 0 moved right
+ghost 2 moved left
+-----------------------
+855
+-----------------------
+856
+ghost 0 moved down
+ghost 1 moved down
+ghost 2 moved down
+-----------------------
+857
+-----------------------
+858
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+859
+-----------------------
+860
+ghost 0 moved up
+ghost 1 moved up
+ghost 2 moved right
+-----------------------
+861
+-----------------------
+862
+pacman moved up
+ghost 2 moved right
+-----------------------
+863
+pacman moved right
+-----------------------
+864
+ghost 0 moved down
+-----------------------
+865
+pacman moved up
+-----------------------
+866
+pacman moved left
+ghost 1 moved right
+ghost 2 moved left
+-----------------------
+867
+-----------------------
+868
+ghost 0 moved up
+ghost 2 moved up
+-----------------------
+869
+-----------------------
+870
+ghost 0 moved left
+ghost 1 moved down
+ghost 2 moved down
+-----------------------
+871
+-----------------------
+872
+ghost 0 moved left
+ghost 1 moved up
+ghost 2 moved up
+-----------------------
+873
+pacman moved up
+-----------------------
+874
+ghost 0 moved left
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+875
+-----------------------
+876
+ghost 0 moved left
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+877
+-----------------------
+878
+pacman moved right
+ghost 0 moved left
+ghost 1 moved down
+ghost 2 moved left
+-----------------------
+879
+-----------------------
+880
+ghost 0 moved left
+ghost 1 moved down
+ghost 2 moved up
+-----------------------
+881
+-----------------------
+882
+pacman moved left
+ghost 0 moved left
+ghost 2 moved left
+-----------------------
+883
+-----------------------
+884
+pacman moved right
+ghost 0 moved left
+ghost 1 moved up
+ghost 2 moved left
+-----------------------
+885
+-----------------------
+886
+ghost 0 moved left
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+887
+pacman moved left
+-----------------------
+888
+ghost 0 moved left
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+889
+-----------------------
+890
+ghost 0 moved left
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+891
+-----------------------
+892
+ghost 0 moved left
+ghost 1 moved left
+ghost 2 moved down
+-----------------------
+893
+pacman moved up
+-----------------------
+894
+ghost 0 moved down
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+895
+-----------------------
+896
+ghost 0 moved down
+ghost 2 moved right
+-----------------------
+897
+pacman moved left
+-----------------------
+898
+ghost 0 moved left
+ghost 1 moved right
+ghost 2 moved up
+-----------------------
+899
+fruit appeared at 33 4
+-----------------------
+900
+fruit disappeared
+ghost 0 moved left
+ghost 1 moved left
+ghost 2 moved up
+-----------------------
+901
+-----------------------
+902
+ghost 0 moved left
+ghost 1 moved down
+ghost 2 moved left
+-----------------------
+903
+pacman moved up
+-----------------------
+904
+pacman moved right
+ghost 0 moved left
+ghost 1 moved down
+ghost 2 moved left
+-----------------------
+905
+-----------------------
+906
+ghost 0 moved down
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+907
+-----------------------
+908
+ghost 0 moved left
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+909
+-----------------------
+910
+ghost 0 moved up
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+911
+pacman moved down
+-----------------------
+912
+ghost 0 moved right
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+913
+pacman moved right
+-----------------------
+914
+pacman moved up
+ghost 1 moved left
+ghost 2 moved up
+-----------------------
+915
+-----------------------
+916
+pacman moved down
+ghost 2 moved up
+-----------------------
+917
+-----------------------
+918
+pacman moved left
+ghost 0 moved down
+ghost 1 moved right
+ghost 2 moved up
+-----------------------
+919
+pacman moved down
+-----------------------
+920
+ghost 0 moved left
+ghost 1 moved up
+ghost 2 moved up
+-----------------------
+921
+pacman moved up
+-----------------------
+922
+ghost 1 moved up
+ghost 2 moved up
+-----------------------
+923
+pacman moved right
+-----------------------
+924
+ghost 0 moved up
+ghost 1 moved left
+ghost 2 moved up
+-----------------------
+925
+-----------------------
+926
+ghost 0 moved right
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+927
+-----------------------
+928
+ghost 1 moved left
+-----------------------
+929
+-----------------------
+930
+ghost 0 moved up
+ghost 1 moved left
+ghost 2 moved down
+-----------------------
+931
+pacman moved up
+-----------------------
+932
+ghost 1 moved left
+-----------------------
+933
+pacman moved right
+-----------------------
+934
+ghost 0 moved left
+ghost 1 moved up
+ghost 2 moved right
+-----------------------
+935
+-----------------------
+936
+ghost 1 moved up
+ghost 2 moved up
+-----------------------
+937
+-----------------------
+938
+ghost 1 moved up
+ghost 2 moved left
+-----------------------
+939
+-----------------------
+940
+ghost 1 moved left
+ghost 2 moved up
+-----------------------
+941
+-----------------------
+942
+ghost 1 moved left
+ghost 2 moved right
+-----------------------
+943
+-----------------------
+944
+ghost 1 moved left
+ghost 2 moved down
+-----------------------
+945
+pacman moved down
+-----------------------
+946
+pacman moved left
+ghost 1 moved left
+-----------------------
+947
+-----------------------
+948
+pacman moved down
+ghost 1 moved left
+ghost 2 moved up
+-----------------------
+949
+pacman moved left
+-----------------------
+950
+pacman moved right
+ghost 0 moved down
+ghost 1 moved left
+-----------------------
+951
+-----------------------
+952
+ghost 1 moved up
+ghost 2 moved right
+-----------------------
+953
+-----------------------
+954
+ghost 1 moved left
+ghost 2 moved left
+-----------------------
+955
+-----------------------
+956
+ghost 1 moved up
+ghost 2 moved up
+-----------------------
+957
+pacman moved up
+-----------------------
+958
+ghost 0 moved up
+ghost 1 moved left
+ghost 2 moved right
+-----------------------
+959
+-----------------------
+960
+ghost 0 moved up
+ghost 2 moved up
+-----------------------
+961
+pacman moved down
+-----------------------
+962
+ghost 0 moved up
+ghost 1 moved down
+ghost 2 moved down
+-----------------------
+963
+-----------------------
+964
+ghost 0 moved up
+ghost 1 moved left
+ghost 2 moved right
+-----------------------
+965
+-----------------------
+966
+pacman moved left
+ghost 0 moved right
+ghost 2 moved up
+-----------------------
+967
+pacman moved down
+-----------------------
+968
+pacman moved right
+ghost 0 moved left
+ghost 1 moved down
+ghost 2 moved down
+-----------------------
+969
+-----------------------
+970
+pacman moved up
+ghost 0 moved up
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+971
+-----------------------
+972
+ghost 0 moved up
+ghost 2 moved right
+-----------------------
+973
+-----------------------
+974
+ghost 0 moved right
+ghost 1 moved left
+ghost 2 moved right
+-----------------------
+975
+-----------------------
+976
+pacman moved right
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+977
+-----------------------
+978
+pacman moved down
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+979
+-----------------------
+980
+ghost 0 moved left
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+981
+-----------------------
+982
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+983
+-----------------------
+984
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+985
+pacman moved left
+-----------------------
+986
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+987
+-----------------------
+988
+pacman moved down
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+989
+-----------------------
+990
+ghost 0 moved up
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+991
+-----------------------
+992
+ghost 0 moved right
+ghost 1 moved up
+ghost 2 moved up
+-----------------------
+993
+pacman moved left
+-----------------------
+994
+pacman moved right
+ghost 0 moved left
+ghost 1 moved right
+ghost 2 moved up
+-----------------------
+995
+-----------------------
+996
+pacman moved up
+ghost 0 moved down
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+997
+-----------------------
+998
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+999
+pacman moved down
+-----------------------
+1000
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+1001
+-----------------------
+1002
+ghost 0 moved down
+ghost 1 moved up
+ghost 2 moved right
+-----------------------
+1003
+pacman moved left
+-----------------------
+1004
+pacman moved down
+ghost 0 moved down
+ghost 1 moved down
+ghost 2 moved right
+-----------------------
+1005
+pacman moved right
+-----------------------
+1006
+pacman moved down
+ghost 0 moved down
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+1007
+pacman moved left
+-----------------------
+1008
+pacman moved down
+ghost 0 moved down
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+1009
+pacman moved right
+-----------------------
+1010
+ghost 0 moved right
+ghost 1 moved up
+ghost 2 moved up
+-----------------------
+1011
+-----------------------
+1012
+pacman moved up
+ghost 0 moved right
+ghost 1 moved down
+ghost 2 moved up
+-----------------------
+1013
+pacman moved right
+-----------------------
+1014
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved left
+-----------------------
+1015
+pacman moved down
+-----------------------
+1016
+pacman moved left
+ghost 0 moved right
+ghost 1 moved up
+ghost 2 moved right
+-----------------------
+1017
+pacman moved right
+-----------------------
+1018
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved down
+-----------------------
+1019
+-----------------------
+1020
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved down
+-----------------------
+1021
+-----------------------
+1022
+pacman moved up
+ghost 0 moved right
+ghost 2 moved right
+-----------------------
+1023
+pacman moved right
+-----------------------
+1024
+ghost 0 moved right
+ghost 1 moved left
+-----------------------
+1025
+-----------------------
+1026
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved left
+-----------------------
+1027
+-----------------------
+1028
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved down
+-----------------------
+1029
+pacman moved down
+-----------------------
+1030
+pacman moved left
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+1031
+-----------------------
+1032
+ghost 0 moved right
+ghost 1 moved down
+ghost 2 moved down
+-----------------------
+1033
+-----------------------
+1034
+ghost 0 moved right
+ghost 1 moved down
+ghost 2 moved right
+-----------------------
+1035
+-----------------------
+1036
+pacman moved up
+ghost 0 moved down
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+1037
+pacman moved inplace
+-----------------------
+1038
+pacman moved left
+ghost 0 moved right
+ghost 1 moved left
+ghost 2 moved down
+-----------------------
+1039
+pacman moved up
+-----------------------
+1040
+pacman moved inplace
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved down
+-----------------------
+1041
+pacman moved left
+-----------------------
+1042
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved down
+-----------------------
+1043
+pacman moved right
+-----------------------
+1044
+ghost 1 moved right
+ghost 2 moved left
+-----------------------
+1045
+pacman moved down
+-----------------------
+1046
+ghost 0 moved left
+ghost 1 moved up
+ghost 2 moved right
+-----------------------
+1047
+pacman moved left
+-----------------------
+1048
+ghost 0 moved down
+ghost 1 moved down
+ghost 2 moved down
+-----------------------
+1049
+-----------------------
+1050
+ghost 0 moved down
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+1051
+-----------------------
+1052
+pacman moved up
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved down
+-----------------------
+1053
+pacman moved inplace
+fruit appeared at 34 11
+-----------------------
+1054
+pacman moved down
+ghost 0 moved down
+ghost 1 moved right
+ghost 2 moved down
+-----------------------
+1055
+pacman moved inplace
+-----------------------
+1056
+ghost 0 moved left
+ghost 1 moved down
+ghost 2 moved down
+fruit moved right
+-----------------------
+1057
+pacman moved right
+-----------------------
+1058
+ghost 0 moved right
+ghost 1 moved down
+ghost 2 moved down
+-----------------------
+1059
+fruit moved up
+-----------------------
+1060
+ghost 0 moved down
+ghost 1 moved down
+ghost 2 moved down
+-----------------------
+1061
+-----------------------
+1062
+ghost 0 moved right
+ghost 1 moved down
+-----------------------
+1063
+-----------------------
+1064
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved up
+-----------------------
+1065
+-----------------------
+1066
+ghost 0 moved up
+ghost 1 moved down
+ghost 2 moved down
+-----------------------
+1067
+-----------------------
+1068
+ghost 0 moved right
+ghost 1 moved down
+ghost 2 moved down
+fruit moved right
+-----------------------
+1069
+pacman moved inplace
+-----------------------
+1070
+ghost 1 moved right
+ghost 2 moved down
+-----------------------
+1071
+-----------------------
+1072
+ghost 0 moved down
+ghost 1 moved left
+ghost 2 moved right
+-----------------------
+1073
+-----------------------
+1074
+ghost 0 moved right
+ghost 1 moved down
+ghost 2 moved right
+fruit moved up
+-----------------------
+1075
+-----------------------
+1076
+ghost 1 moved up
+ghost 2 moved right
+-----------------------
+1077
+fruit moved left
+-----------------------
+1078
+ghost 1 moved down
+ghost 2 moved right
+-----------------------
+1079
+-----------------------
+1080
+ghost 0 moved up
+ghost 1 moved down
+ghost 2 moved right
+-----------------------
+1081
+-----------------------
+1082
+ghost 1 moved right
+ghost 2 moved right
+-----------------------
+1083
+fruit moved down
+-----------------------
+1084
+ghost 0 moved left
+ghost 1 moved down
+ghost 2 moved right
+-----------------------
+1085
+-----------------------
+1086
+ghost 1 moved down
+ghost 2 moved right
+-----------------------
+1087
+-----------------------
+1088
+pacman moved up
+ghost 0 moved right
+ghost 1 moved down
+ghost 2 moved right
+-----------------------
+1089
+pacman moved left
+fruit moved left
+-----------------------
+1090
+ghost 1 moved down
+-----------------------
+1091
+-----------------------
+1092
+ghost 0 moved down
+ghost 1 moved right
+-----------------------
+1093
+-----------------------
+1094
+ghost 0 moved right
+ghost 1 moved right
+ghost 2 moved left
+-----------------------
+1095
+pacman moved down

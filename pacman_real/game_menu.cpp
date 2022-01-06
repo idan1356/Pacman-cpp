@@ -14,7 +14,7 @@ void Menu::printInstructions() const {
 }
 
 /*creates an instance of game, either with color or without, depends on color_mode option*/
-void Menu::startGame() const {
+void Menu::startGame(bool saveFlag) const {
 	int numOfFiles = files.size();
 	Game_State state;
 
@@ -27,7 +27,7 @@ void Menu::startGame() const {
 
 	if (screen_selected == numOfFiles) {
 		for (int i = 0; i < numOfFiles; i++) {
-			Game_Initializer game(files[i], state , difficulty, color_mode);
+			Game_Initializer game(files[i], state , difficulty, color_mode, saveFlag);
 			state = game.startGame();
 			
 			if (state.lives == 0)
@@ -35,7 +35,7 @@ void Menu::startGame() const {
 		}
 	}
 	else {
-		Game_Initializer game(files[screen_selected], state, difficulty, color_mode);
+		Game_Initializer game(files[screen_selected], state, difficulty, color_mode, saveFlag);
 		state = game.startGame();
 	}
 
@@ -78,7 +78,7 @@ void Menu::options() {
 
 			switch (tempch) {
 			case COLOR:               /*toggle color_mode option*/
-				color_mode = (color_mode + 1) % 2;  
+				color_mode = !color_mode;
 				updateColorModeOption();
 				break;
 			case DIFFICULTY:
@@ -126,7 +126,7 @@ void Menu::updateScreenSelected() const {
 }
 
 /*menu loop*/
-void Menu::start() {
+void Menu::start(bool flag) {
 	enum Options { START = '1', OPTIONS, INSTRUCTIONS, EXIT };
 	char tempch;
 	hideCursor();
@@ -139,7 +139,7 @@ void Menu::start() {
 
 			switch (tempch) {
 			case START:      
-				startGame();
+				startGame(flag);
 				returnToMenu();
 				break;
 			case OPTIONS:
@@ -167,20 +167,7 @@ void Menu::returnToMenu() const {
 	printMenu();
 }
 
-vector<string> Menu::getScreenFiles() const {
-	vector<string> files;
-	string extension = ".screen";
-	fs::path path = fs::current_path();
 
-	for (auto& p : fs::recursive_directory_iterator(path)) {
-		if (p.path().extension() == extension)
-			files.push_back(p.path().stem().string() + extension);
-	}
-
-	std::sort(files.begin(), files.end());
-
-	return files;
-}
 
 void Menu::gameLostScreen() const {
 	const char ghostArt[4][50] = {

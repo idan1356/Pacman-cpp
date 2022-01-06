@@ -1,3 +1,4 @@
+#pragma once
 #ifndef _GAME_OBJECT_H_
 #define _GAME_OBJECT_H_
 
@@ -5,6 +6,7 @@
 #include "position.h"
 #include "map.h"
 #include "misc.h"
+#include "logger.h"
 
 class Game_Object {
 private:
@@ -12,7 +14,7 @@ private:
 	Position	obj_pos;
 	Direction	obj_dir;
 	Color		obj_color;
-
+	
 	const Position	obj_init_pos;
 
 public:
@@ -22,7 +24,7 @@ public:
 	Direction& getDirection() { return obj_dir; };
 	Position getPosition() const { return obj_pos; };
 	const Position& getInitPosition() const { return obj_init_pos; };
-	Color& getColor() const { obj_color; };
+	Color getColor() const { return obj_color; };
 	Position getNextPosition() const;
 
 	char& getchar() { return obj_char; };
@@ -36,7 +38,7 @@ public:
 	void moveToInitPos(Map& map);
 	void moveObject(Map& map);
 
-	virtual void moveNovice(Map& map);
+	virtual void moveNovice(Map& map, Logger& log, int i);
 };
 
 #endif

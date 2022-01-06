@@ -9,10 +9,11 @@
 
 #include <iostream>
 #include <stdlib.h>
-
+#include <sstream>
 #include <vector>
 #include <string>
 #include <fstream>
+//#include "game_initializer.h";
 using namespace std;
 
 #include <experimental/filesystem>
@@ -23,9 +24,13 @@ void setTextColor(Color color);
 void hideCursor();
 void clear_screen();
 
-Direction keyToDirection(char key);
-void pressAnyKeyToContinue();
+vector<string> getFiles(string extension);
 
+Direction keyToDirection(char key);
+string dirToStr(const Direction& dir);
+string remove_extension(const string& filename);
+
+void pressAnyKeyToContinue();
 #ifndef WINDOWS	
 int _getch(void);
 int _kbhit(void);

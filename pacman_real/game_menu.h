@@ -4,21 +4,19 @@
 #include "game_initializer.h"
 #include <filesystem>
 
-
 class Menu {
 private:
 	bool			color_mode = true;
-	vector<string>	files = getScreenFiles();
+	vector<string>	files;
 	Difficulty		difficulty = Difficulty::GOOD;
 	int				screen_selected;
 
-	vector<string> getScreenFiles() const;
 	void updateScreenSelected() const;
 	void updateDifficulty() const;
 	void updateColorModeOption() const;
 	void printInstructions() const;
 	void returnToMenu() const;
-	void startGame() const;
+	void startGame(bool saveFlag) const;
 	void printMenu() const;
 	void options();
 
@@ -27,8 +25,8 @@ private:
 	void endgameScreen() const;
 
 public:
-	Menu() : files(getScreenFiles()), screen_selected(files.size()) {};
-	void start();
+	Menu(vector<string> files) : files(files), screen_selected(files.size()) {};
+	void start(bool saveFlag);
 };
 
 

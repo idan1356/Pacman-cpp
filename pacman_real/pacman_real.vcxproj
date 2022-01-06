@@ -145,7 +145,10 @@
     <ClCompile Include="game.cpp" />
     <ClCompile Include="game_initializer.cpp" />
     <ClCompile Include="game_object.cpp" />
+    <ClCompile Include="game_replayer.cpp" />
+    <ClCompile Include="general.cpp" />
     <ClCompile Include="ghost.cpp" />
+    <ClCompile Include="logger.cpp" />
     <ClCompile Include="map.cpp" />
     <ClCompile Include="game_menu.cpp" />
     <ClCompile Include="pacman.cpp" />
@@ -158,6 +161,9 @@
     <ClInclude Include="fruit.h" />
     <ClInclude Include="game_initializer.h" />
     <ClInclude Include="game_menu.h" />
+    <ClInclude Include="game_replayer.h" />
+    <ClInclude Include="general.h" />
+    <ClInclude Include="logger.h" />
     <ClInclude Include="misc.h" />
     <ClInclude Include="config.h" />
     <ClInclude Include="game.h" />

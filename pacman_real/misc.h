@@ -35,6 +35,8 @@ enum class Direction {
 	INVALID_KEY //invalid key pressed
 };
 
+
+
 const char GHOST_CHAR = '$';
 const char PACMAN_CHAR = '@';
 
@@ -49,7 +51,7 @@ const int DEFAULT_NUM_OF_LIVES = 3;
 const int DEFAULT_MAP_WIDTH = 25;
 const int DEFAULT_MAP_LENGTH = 80;
 
-const int GAME_SPEED = 300;
+const int GAME_SPEED = 200;
 const int ESC = 27;
 
 const Color DEFAULT_MAP_COLOR = Color::BLUE;

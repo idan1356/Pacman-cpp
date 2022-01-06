@@ -21,7 +21,6 @@ public:
 
 	void draw(char ch, Color color) const;
 	void advance(const Direction& direction);
-
 	bool isEqual(const Position& pos1) const;
 };
 

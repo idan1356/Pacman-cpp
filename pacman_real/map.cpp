@@ -5,6 +5,7 @@ Map::Map(string file_name, bool colorMode) {
 	int i = 1;
 	fstream file;
 	string buffer;
+	map_name = file_name;
 
 	file.open(file_name);
 	if (!file) {
@@ -19,7 +20,6 @@ Map::Map(string file_name, bool colorMode) {
 		return;
 	}
 	else {
-
 		while (!file.eof()) {
 			getline(file, buffer);
 			strcpy(map[i], buffer.data());
@@ -105,8 +105,8 @@ bool Map::isInBounds(const Position& pos) const {
 }
 void Map::addLegend(const Position& pos, bool colorMode) {
 	char legend[3][20] = { "###################",
-					   "#                 #",
-					   "###################"
+					       "#                 #",
+					       "###################"
 	};
 
 	int posX = pos.getX();

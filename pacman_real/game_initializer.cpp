@@ -79,7 +79,7 @@ void Game_Initializer::initCell(Position pos) {
 
 Game_State Game_Initializer::startGame() const {
 	if (map.getIsValidMap()) {
-		Game game(pacman[0], ghost, map, legend, state, difficulty);
+		Game game(pacman[0], ghost, map, legend, state, difficulty, saveMode);
 		return game.start();
 	}
 	else {
@@ -89,6 +89,11 @@ Game_State Game_Initializer::startGame() const {
 	}
 
 };
+
+Game_State Game_Initializer::replay(bool silentFlag) {
+	Game_Replayer game(map.getMapName(), pacman[0], ghost, map, legend, state, difficulty, saveMode);
+	return game.replay(silentFlag);
+}
 
 
 

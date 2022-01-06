@@ -1,11 +1,33 @@
-#include "game_menu.h"
+#include "general.h"
 
-int main() {
-	Menu menu;
-	menu.start();
+void replayGame(char* argv[]);
+void menu();
+
+int main(int argc, char* argv[]) {
+	bool saveFlag = false;
+	
+	if (isSave(argc, argv, saveFlag)) {
+		menu(saveFlag);
+	}
+
+	else if (isLoad(argc, argv)) {
+		try {
+			replayGame(argc, argv);
+			clear_screen();
+			cout << "replay valid" << endl;
+		}
+		catch (...) {
+			clear_screen();
+			cout << "replay invalid" << endl;
+		}
+	}
+	else 
+		throw invalid_argument("invalid argument given");
+	
 }
 
 
-// if there are no screen files write message
-// sort screens lexicographocally
-// select 
+
+// logger always active, create enable/disable based on argument
+// game over/game won for result -done
+// result file is valid/invalid
