@@ -17,7 +17,7 @@ void replayGame(int argc, char* argv[]) {
 			Game_Initializer game(screen_file, state, Difficulty::BEST, true, false);
 			bool silentFlag = (argc == 3 && strcmp(argv[2], "[-silent]") == 0);
 			state = game.replay(silentFlag);
-
+			clear_screen();
 			if (state.lives == 0)
 				break;
 		}
