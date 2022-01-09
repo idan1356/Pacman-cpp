@@ -4,7 +4,7 @@
 
 class Fruit : public Game_Object {
 private:
-	bool isActivated = true;
+	bool isActivated = false;
 
 public:
 	Fruit(const Map& map) : Game_Object(getRandNum(), map.getRandPositionOnMap(), Direction::RIGHT, Color::WHITE, map.getRandPositionOnMap()) {};

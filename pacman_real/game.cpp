@@ -6,7 +6,7 @@ Game_State Game::start() {
 	bool gameOver;
 	stack<Position> stacks[4];
 	Logger log;
-
+	
 	if (saveFlag) {
 		log.activate();
 		log.write(map.getMapName());
@@ -15,13 +15,17 @@ Game_State Game::start() {
 	count = 0;
 	gameOver = false;
 	hideCursor();
-//	countdown();
+	countdown();
 
 	while (gameOver == false) { 
 		gotoxy(0, 0);
 		cout << count << endl;
 
 		log.newTurn(count);
+
+		if(count == 0)
+			fruit.toggle(map, log);
+
 		handleIsEaten(gameOver, log, count);
 		Sleep(GAME_SPEED);
 		handlePlayerInput(log);     /*handles pacman movement and pause status according to player input*/
@@ -33,7 +37,7 @@ Game_State Game::start() {
 			break;
 		}
 		if (count % 2 == 0) 
-			moveGhosts(count, stacks, log);
+			moveGhosts(count, log);
 
 		if (count % 3 == 0) {
 			if ((rand() % 55) == 1) 
@@ -87,14 +91,14 @@ void Game::printParameters() const {
 
 /*handles pacman eaten event, 
 moves pacman and the ghosts back to their intitial position and starts a small countdown*/
-void Game::pacmanEatenEvent() {
+void Game::pacmanEatenEvent(Logger& log) {
 	printParameters();
 
-	pacman.moveToInitPos(map);
+	pacman.moveToInitPos(map, log);
 	pacman.setDirection(Direction::NONE);
 
 	for (int i = 0; i < ghost.size(); i++)
-		ghost[i].moveToInitPos(map);
+		ghost[i].moveToInitPos(map, log);
 
 	countdown();
 }
@@ -116,43 +120,12 @@ void Game::printMessage(const char* string) {
 /*iterates through the array of ghosts and moves them 1 step*/
 //each ghost has a change to sample pacmans current position and create a short path to its position
 //the sample rate of pacmans position changes according to the difficulty
-void Game::moveGhosts(int& counter, stack<Position> stacks[4], Logger& log) {
-	Position curGhostPos;
-	int sample;
-
-	switch (difficulty) {
-	case Difficulty::BEST:
-		sample = 5;
-		break;
-	case Difficulty::GOOD:
-		sample = 10;
-		break;
-	}
-
-	for (int i = 0; i < ghost.size(); i++) {
-		if (difficulty != Difficulty::NOVICE) {
-			if ((rand() % sample) == 0) {
-				stacks[i] = ghost[i].findPath(pacman.getPosition(), map);
-			}
-			if (!stacks[i].empty()) {
-				try {
-					Direction dir = getDirectionFromStack(ghost[i].getPosition(), stacks[i].top());
-					ghost[i].setDirection(dir);
-					ghost[i].moveObject(map);
-					log.logToStep("ghost " + to_string(i) + " moved " + dirToStr(dir));
-					stacks[i].pop();
-				}
-				catch (exception) {
-					stacks[i].empty();
-					ghost[i].moveNovice(map, log, i);
-				}
-			}
-			else
-				ghost[i].moveNovice(map, log, i);
-		}
+void Game::moveGhosts(int& counter, Logger& log) {
+	for (int i = 0; i < ghost.size(); i++)
+		if (difficulty == Difficulty::NOVICE)
+			ghost[i].moveNovice(map, log, i);
 		else
-			ghost[i].moveNovice(map, log,  i);
-	}
+			ghost[i].move(map, i, difficulty, pacman.getPosition(), log);
 }
 
 /*determines whether pacman stepped on a breadcrumb, if so
@@ -191,7 +164,7 @@ void Game::handlePlayerInput(Logger& log) {
 	else
 		pacman.movePacman(map, log);     /*pacman continues natural movement if no key pressed*/
 
-	pacman.useSecretTunnel(map);   /*if pacman arrives at tunnel, uses it*/
+	pacman.useSecretTunnel(map, log);   /*if pacman arrives at tunnel, uses it*/
 }
 
 
@@ -204,27 +177,25 @@ void Game::handleIsEaten(bool& game_over, Logger& log, int count) {
 		log.logToRes("pacman eaten");
 		log.logToRes(to_string(lives) + " lives left");
 
-		//for (int i = 0; i < ghost.size(); i++)
-			//stacks[i] = {};
-
 		if (lives == 0) {
 			game_over = true;
 		}
 		else {
-			pacmanEatenEvent();
+			pacmanEatenEvent(log);
+			log.logToStep("teleport objs");
 		}
 	}
 
 	if (isObjEatenByGhosts(fruit)) {
 		fruit.toggle(map, log);
 		for (int i = 0; i < ghost.size(); i++)   
-			ghost[i].teleportObject(ghost[i].getPosition(), map);
+			ghost[i].teleportObject(ghost[i].getPosition(), map, log);
 	}
 
 	if (pacman.getPosition().isEqual(fruit.getPosition())) {
 		fruit.toggle(map, log);
 		score += (fruit.getchar() - '0');
-		pacman.teleportObject(pacman.getPosition(), map); 
+		pacman.teleportObject(pacman.getPosition(), map, log); 
 	}
 }
 
@@ -243,19 +214,5 @@ bool Game::isObjEatenByGhosts(const Game_Object& obj) {
 	return false;
 }
 
-Direction Game::getDirectionFromStack(const Position& ghost, const Position& stack) {
-	int x = ghost.getX() - stack.getX();
-	int y = ghost.getY() - stack.getY();
 
-	if (x == 1 && y == 0)
-		return Direction::LEFT;
-	else if (x == -1 && y == 0)
-		return Direction::RIGHT;
-	else if (x == 0 && y == 1)
-		return Direction::UP;
-	else if (x == 0 && y == -1)
-		return Direction::DOWN;
-	else
-		throw exception("invalid stack position");
-}
 

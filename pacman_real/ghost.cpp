@@ -61,3 +61,54 @@ stack<Position> Ghost::findPath(const Position& pacman, const Map& map) const {
 
 	return stack;
 }
+
+void Ghost::move(Map& map, int i, Difficulty& difficulty, const Position& pacman, Logger& log) {
+	int sample;
+
+	switch (difficulty) {
+	case Difficulty::BEST:
+		sample = 5;
+		break;
+	case Difficulty::GOOD:
+		sample = 10;
+		break;
+	}
+
+	if ((rand() % sample) == 0) {
+		findPath(pacman, map);
+	}
+
+	if (!path.empty() && difficulty != Difficulty::NOVICE) {
+		try {
+			Direction dir = getDirectionFromStack(getPosition(), path.top());
+			setDirection(dir);
+			moveObject(map);
+			log.logToStep("ghost " + to_string(i) + " moved " + dirToStr(dir));
+			path.pop();
+		}
+		catch (exception) {
+			path.empty();
+			moveNovice(map, log, i);
+		}
+	}
+
+	else
+		moveNovice(map, log, i);
+}
+
+
+Direction Ghost::getDirectionFromStack(const Position& ghost, const Position& stack) {
+	int x = ghost.getX() - stack.getX();
+	int y = ghost.getY() - stack.getY();
+
+	if (x == 1 && y == 0)
+		return Direction::LEFT;
+	else if (x == -1 && y == 0)
+		return Direction::RIGHT;
+	else if (x == 0 && y == 1)
+		return Direction::UP;
+	else if (x == 0 && y == -1)
+		return Direction::DOWN;
+	else
+		throw exception("invalid stack position");
+}

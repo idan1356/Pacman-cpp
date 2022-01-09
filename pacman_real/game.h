@@ -31,14 +31,14 @@ protected:
 	void decreaseLives() { lives--; };
 	void handleIsEaten(bool& game_over, Logger& log, int count);
 
-	Direction getDirectionFromStack(const Position& ghost, const Position& stack);
+	//Direction getDirectionFromStack(const Position& ghost, const Position& stack);
 
 	void updateBreadcrumbs();
 	void handlePlayerInput(Logger& log);
-	void pacmanEatenEvent();
+	void pacmanEatenEvent(Logger& log);
 	void printParameters() const;
 
-	void moveGhosts(int& counter, stack<Position> stack[4], Logger& log);
+	void moveGhosts(int& counter, Logger& log);
 	virtual void countdown();
 	void pause();
 

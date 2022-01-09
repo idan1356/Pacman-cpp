@@ -29,7 +29,7 @@ void Game_Object::moveObject(Map& map) {
 }
 
 /*teleports object to a different location on map based on position given*/
-void Game_Object::teleportObject(const Position& pos, Map& map) {
+void Game_Object::teleportObject(const Position& pos, Map& map, Logger& log) {
 	char mapElement;
 
 	mapElement = map.getMapElement(obj_pos);
@@ -74,11 +74,11 @@ void Game_Object::setPosition(const Position& position) {
 }
 
 /*moves object back to its initial position*/
-void Game_Object::moveToInitPos(Map& map) {
+void Game_Object::moveToInitPos(Map& map, Logger& log) {
 	Position objInitPosition;
 
 	objInitPosition = getInitPosition();
-	teleportObject(objInitPosition, map);
+	teleportObject(objInitPosition, map, log);
 }
 
 /*

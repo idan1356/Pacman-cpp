@@ -13,7 +13,7 @@ public:
 	Pacman() {};
 
 	void adjustToInput(Map& map, Logger& log, char ch);
-	void useSecretTunnel(Map& map);
+	void useSecretTunnel(Map& map, Logger& log);
 	void movePacman(Map& map, Logger& log);
 };
 

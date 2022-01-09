@@ -34,8 +34,8 @@ public:
 	void setDirection(char key);
 	void setchar(char ch) { obj_char = ch; };
 
-	void teleportObject(const Position& pos, Map& map);
-	void moveToInitPos(Map& map);
+	void teleportObject(const Position& pos, Map& map, Logger& log);
+	void moveToInitPos(Map& map, Logger& log);
 	void moveObject(Map& map);
 
 	virtual void moveNovice(Map& map, Logger& log, int i);

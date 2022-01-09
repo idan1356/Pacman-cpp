@@ -18,7 +18,7 @@ char Fruit::getRandNum() const {
 		 setchar(getRandNum());     // sets fruit char to random num
 		 curPos = map.getRandPositionOnMap();  
 
-		 teleportObject(curPos, map);        //teleports fruit to a different location, remains hidden untill next toggle
+		 teleportObject(curPos, map, log);        //teleports fruit to a different location, remains hidden untill next toggle
 		 mapElement = map.getMapElement(curPos);
 		 curPos.draw(mapElement, DEFAULT_BREADCRUMB_COLOR);
 		 setDirection(Direction::NONE);

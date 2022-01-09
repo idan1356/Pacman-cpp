@@ -1,5 +1,6 @@
 #include "game_replayer.h"
 
+//reads game from files and checks for files validity
 Game_State Game_Replayer::replay(bool silentFlag) {
 	string buffer;
 	Logger log;
@@ -14,13 +15,14 @@ Game_State Game_Replayer::replay(bool silentFlag) {
 		gotoxy(0, 0);
 		cout << count << endl;
 
-		handleIsEatenRec(count, log, gameOver);
-		readStep(count);
-		pacman.moveObject(map);
-		pacman.useSecretTunnel(map);
+		readStep(count);   
+
+		if (!silentFlag)
+			Sleep(5);
+
+		pacman.moveObject(map); 
+		pacman.useSecretTunnel(map, log);
 		updateBreadcrumbs();
-		handleIsEatenRec(count, log, gameOver);
-		printParameters();
 
 		if (map.getBreadcrumbCount() == 0 && isClearedLogged(count)) {
 			break;
@@ -33,12 +35,10 @@ Game_State Game_Replayer::replay(bool silentFlag) {
 			cur.moveObject(map);
 		}
 
-		if (fruit.getIsActivated() && (count % 3) == 1)
+		if (fruit.getIsActivated() && (count % 3) == 0)
 			fruit.moveObject(map);
 			
-		if (!silentFlag)
-			Sleep(5);
-
+		printParameters();
 		count++;
 	}
 
@@ -46,10 +46,9 @@ Game_State Game_Replayer::replay(bool silentFlag) {
 	return  state;
 }
 
-
-
+// read one game loop iteration and sets game objects direction accordingly
 void Game_Replayer::readStep(int count) {
-	string buffer;
+	string buffer; Logger log;
 	getline(steps, buffer);
 
 	if (count != stoi(buffer))
@@ -57,19 +56,25 @@ void Game_Replayer::readStep(int count) {
 
 	while (!steps.eof() && buffer.at(0) != '-') {
 		getline(steps, buffer);
-		parseLine(buffer);
+
+		if (buffer == "teleport objs" && isEatenLogged(count)) {
+			pacmanEatenEvent(log);
+			decreaseLives();
+		}
+		parseLine(buffer);  
 	}
 }
 
+//parses string in result file to command to specific game object
 void Game_Replayer::parseLine(const string& line) {
 	std::stringstream iss(line);
-	string buffer;
+	string buffer; bool temp;
 	Direction dir;
 	Game_Object* obj = nullptr;
 	Logger log;
 	int x, y;
 
-	iss >> buffer;
+	iss >> buffer;    //converts line into stream and reads word by word
 
 	if (buffer == "pacman")
 		obj = &pacman;
@@ -103,11 +108,11 @@ void Game_Replayer::parseLine(const string& line) {
 		y = stoi(buffer);
 
 		Position pos = { x, y };
-		fruit.teleportObject(pos, map);
+		fruit.teleportObject(pos, map, log);
 	}
 }
 
-
+//converts string into direction
 Direction Game_Replayer::strToDir(string str) {
 	if (str == "up")
 		return Direction::UP;
@@ -123,6 +128,7 @@ Direction Game_Replayer::strToDir(string str) {
 		throw invalid_argument("invalid direction given at result file");
 }
 
+//checks if pacman eaten logged in result file in current iteration of the replayer, given corrent count
 bool Game_Replayer::isEatenLogged(int count) {
 	string buffer;
 	vector<string> vec;
@@ -165,7 +171,7 @@ void Game_Replayer::handleIsEatenRec(int& count,Logger& log,bool& gameOver) {
 
 }
 
-// check if level cleared 
+// checks if level cleared event is logged in result file and synced with the current count
 bool Game_Replayer::isClearedLogged(int& count) {
 	string buffer;
 	getline(res, buffer);

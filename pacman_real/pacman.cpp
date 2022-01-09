@@ -40,7 +40,7 @@ void Pacman::movePacman(Map& map, Logger& log) {
 }
 
 /*teleports pacman to the other side of the tunnel if at tunnel enterance*/
-void Pacman::useSecretTunnel(Map& map) {
+void Pacman::useSecretTunnel(Map& map, Logger& log) {
 	Position curPos, newPos;
 	int mapWidth, mapLength;
 	int x, y;
@@ -63,6 +63,6 @@ void Pacman::useSecretTunnel(Map& map) {
 
 	newPos = Position(x, y);
 	if(map.getMapElement(Position(x, y)) == CORRIDOR)
-		teleportObject(newPos, map);
+		teleportObject(newPos, map, log);
 }
 

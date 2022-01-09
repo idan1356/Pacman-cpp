@@ -23,7 +23,6 @@ int main(int argc, char* argv[]) {
 	}
 	else 
 		throw invalid_argument("invalid argument given");
-	
 }
 
 
