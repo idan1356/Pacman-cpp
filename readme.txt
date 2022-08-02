@@ -1,5 +1,5 @@
-Lir Mimrod 
-Idan Rosenberg 
+Lir Mimrod
+Idan Rosenberg
 
 bonus additions:
 - color mode selection via menu 
