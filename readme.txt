@@ -1,5 +1,5 @@
-Lir Mimrod 315029124
-Idan Rosenberg 315006882
+Lir Mimrod 
+Idan Rosenberg 
 
 bonus additions:
 - color mode selection via menu 
