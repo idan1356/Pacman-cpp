@@ -1,5 +1,6 @@
-Lir Mimrod
-Idan Rosenberg
+created by:
+[Lir Mimrod](https://github.com/lirmimrod),
+[Idan Rosenberg](https://github.com/idan1356)
 
 bonus additions:
 - color mode selection via menu 
